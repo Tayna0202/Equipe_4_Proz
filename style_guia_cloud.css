@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+body {
+  background-image: url(/img/imagens/FUNDO\ LARANJA.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  min-height: 100vh; /* Define a altura mínima da página como 100% da viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 20px;
+  height: 70px; 
+}
+
+header .logo {
+  max-height: 150px; 
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 100px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s, border-bottom 0.5s;
+}
+
+nav ul li a:hover {
+  color: orange;
+  border-bottom: 2px solid orangered;
+}
+
+.login-btn {
+  background-color: 007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.login-btn:hover {
+  background-color: darkblue;
+  transform: scale(1.1);
+}
+
+main {
+  flex: 1; /* Ocupa todo o espaço restante */
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.text-content {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-content h1 {
+  font-size: 100px;
+  margin: 60px;
+  padding-left: 50px;
+  text-align: center;
+  font-family: "Ubuntu Sans", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  color: #fff;
+}
+
+.text-content p {
+  font-size: 40px;
+  margin-top: 20px;
+  font-family: "Caveat", cursive;
+  text-align: center;
+  color: #fff;
+  padding: 150px;
+  margin-top: -200px;
+}
+
+.imagem-one {
+  width: 56%;
+  height: auto;
+  margin-left: -70px;
+  position: relative;
+  z-index: 1;
+  margin-top: -250px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+footer .logo {
+  height: 300px; 
+  width: auto; 
+}
+
+.footer-text {
+  text-align: center;
+}
+
+.footer-text p {
+  margin: 5px 0;
+}
+
+.footer .canto-inferior-direito{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.canto-inferior-direito .certificacoes{
+  padding-top: 20px;
+}
+
+.social-media {
+  display: flex;
+  gap: 20px; 
+}
+
+.social-media img {
+  height: 40px; 
+  width: auto; 
+  margin-left: 10px;
+}
+
