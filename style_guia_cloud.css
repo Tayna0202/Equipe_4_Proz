@@ -28,6 +28,16 @@ header .logo {
   max-height: 150px; 
 }
 
+h1 {
+  margin-top: 10px;
+  margin-right: auto;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -161,3 +171,38 @@ footer .logo {
   margin-left: 10px;
 }
 
+details {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+        }
+            button {
+              margin-top: 10px;
+              padding: 10px 20px;
+              background-color: #007BFF;
+              color: white;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+          }
+          button:hover {
+              background-color: #0056b3;
+          }
+
+.mapa_mental {
+  color: #f0f0f0;
+  padding: auto;
+  margin-top: auto;
+  padding: auto;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
