@@ -49,7 +49,7 @@ nav ul li a:hover {
   border-bottom: 2px solid orangered;
 }
 
-.login-btn, .acessar {
+.login-btn {
   background-color: blue;
   color: white;
   border: none;
@@ -61,59 +61,61 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
-.login-btn:hover, .acessar:hover {
+.login-btn:hover {
   background-color: darkblue;
   transform: scale(1.1);
 }
 
 main {
   flex: 1; /* Ocupa todo o espaço restante */
-  padding: 50px;
+  padding: 20px;
 }
 
 .content {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  
 }
 
 .text-content {
-  margin-left: 100px;
-  margin-top: -80px;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .text-content h1 {
   font-size: 60px;
+  margin: 100px;
+  padding-left: auto;
+  text-align: center;
   font-family: "Ubuntu Sans", sans-serif;
   font-weight: 800;
   font-style: italic;
   color: #fff;
-}
-
-.text-content li {
-  font-size: 30px;
-  font-family: "Ubuntu Sans", sans-serif;
-  font-weight: 800;
-  color: #fff;
-  margin-bottom: -15px;
-}
-
-.acessar{
-  margin-bottom: 20px;
+  padding: 20px;
+  
 }
 
 .text-content p {
-  font-size: 30px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-style: italic;
+  font-size: 20px;
+  font-family: "Caveat", cursive;
+  text-align: center;
   color: #fff;
-  margin-bottom: 25px;
+  padding: 100px;
+  margin-top: -170px;
 }
 
-.livro{
-  margin-top: -10px;
-  width: 100%;
+.imagem-one {
+  width: 500px;
   height: auto;
+  margin-right: 150px;
+  position: relative;
   z-index: 1;
+  
+  max-width: 100%
 }
 
 footer {
