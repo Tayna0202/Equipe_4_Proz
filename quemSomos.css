@@ -109,7 +109,7 @@ main {
 }
 
 .imagem-one {
-  width: 600px; /* Aumenta a largura da imagem */
+  width: 600px; 
   height: auto;
   margin-right: 150px;
   position: relative;

@@ -1,0 +1,85 @@
+/* styles.css */
+
+body {
+    background-color: #FFF176; 
+    color: #424242; 
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #FFF; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #FFB74D; 
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: question-counter;
+    padding: 0;
+}
+
+li {
+    counter-increment: question-counter;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 10px;
+}
+
+li:last-child {
+    border-bottom: none; 
+}
+
+li:before {
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+ul li:before {
+    content: "";
+}
+
+ul li:not(:last-child):after {
+    content: " ";
+}
+
+ul li:last-child:after {
+    content: "";
+}
+
+.answer {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.answer.correta {
+    color: #388E3C; 
+}
+
+.answer.incorreta {
+    color: #D32F2F; 
+}
