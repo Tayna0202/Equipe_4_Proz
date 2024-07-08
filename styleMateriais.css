@@ -49,8 +49,8 @@ nav ul li a:hover {
   border-bottom: 2px solid orangered;
 }
 
-.login-btn, .acessar {
-  background-color: blue;
+.login-btn {
+  background-color: darkblue;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -59,9 +59,10 @@ nav ul li a:hover {
   font-size: 20px;
   font-weight: bold;
   border-radius: 5px;
+  margin-right: 15px; /* Ajuste o valor conforme necessário */
 }
 
-.login-btn:hover, .acessar:hover {
+.login-btn:hover {
   background-color: darkblue;
   transform: scale(1.1);
 }

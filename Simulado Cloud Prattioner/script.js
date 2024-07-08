@@ -11,8 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 checkbox.addEventListener('change', function() {
                     const respostasSelecionadas = Array.from(pergunta.querySelectorAll('input[type="checkbox"]:checked')).map(cb => cb.value);
                     let respostasCorretas = getRespostasCorretas(indice);
-                    
-                
                     const respostaCorreta = arraysIguais(respostasSelecionadas, respostasCorretas);
                     
                 

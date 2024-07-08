@@ -60,7 +60,7 @@ nav ul li a:hover {
 }
 
 .login-btn {
-  background-color: 007BFF;
+  background-color: darkblue;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -69,12 +69,14 @@ nav ul li a:hover {
   font-size: 20px;
   font-weight: bold;
   border-radius: 5px;
+  margin-right: 15px; /* Ajuste o valor conforme necessário */
 }
 
 .login-btn:hover {
   background-color: darkblue;
   transform: scale(1.1);
 }
+
 
 main {
   flex: 1; /* Ocupa todo o espaço restante */
