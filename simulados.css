@@ -78,10 +78,15 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction:row;
   width: 100%;
   text-align: center;
   color: white;
+}
+
+.simulados-content img{
+  width: 25%;
+  height: 25%;
 }
 
 .simulados-content h1 {
