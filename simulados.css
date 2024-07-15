@@ -130,8 +130,10 @@ main {
   width: 40%;
   height: auto;
   margin-left: 20px;
-  margin-top: -50px; /* Ajuste de margem superior para alinhar a imagem */
+  position: relative;
+  top: 50px;
 }
+
 
 footer {
   background-color: black;
