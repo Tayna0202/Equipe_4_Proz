@@ -1,5 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
     const perguntas = document.querySelectorAll('ol > li');
+    let indiceAtual = 0;
+
+    function mostrarPergunta(indice) {
+        perguntas.forEach((pergunta, i) => {
+            pergunta.style.display = i === indice ? 'block' : 'none';
+        });
+    }
+
+    function atualizarNavegacao() {
+        document.getElementById('btnAnterior').style.display = indiceAtual > 0 ? 'inline' : 'none';
+        document.getElementById('btnProxima').style.display = indiceAtual < perguntas.length - 1 ? 'inline' : 'none';
+    }
 
     perguntas.forEach((pergunta, indice) => {
         const checkboxes = pergunta.querySelectorAll('input[type="checkbox"]');
@@ -13,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     let respostasCorretas = getRespostasCorretas(indice);
                     const respostaCorreta = arraysIguais(respostasSelecionadas, respostasCorretas);
                     
-                
                     if (respostaCorreta) {
                         divResposta.textContent = 'Acertou Mizavil!';
                         divResposta.classList.add('correta');
@@ -232,7 +243,6 @@ document.addEventListener('DOMContentLoaded', function() {
                             break;
                     }
                     
-                    
                     if (respostaCorreta) {
                         divResposta.textContent = 'Acertou Mizavil!';
                         divResposta.classList.add('correta');
@@ -389,4 +399,23 @@ document.addEventListener('DOMContentLoaded', function() {
         if (arr1.length !== arr2.length) return false;
         return arr1.every(val => arr2.includes(val)) && arr2.every(val => arr1.includes(val));
     }
+
+    document.getElementById('btnProxima').addEventListener('click', function() {
+        if (indiceAtual < perguntas.length - 1) {
+            indiceAtual++;
+            mostrarPergunta(indiceAtual);
+            atualizarNavegacao();
+        }
+    });
+
+    document.getElementById('btnAnterior').addEventListener('click', function() {
+        if (indiceAtual > 0) {
+            indiceAtual--;
+            mostrarPergunta(indiceAtual);
+            atualizarNavegacao();
+        }
+    });
+
+    mostrarPergunta(indiceAtual);
+    atualizarNavegacao();
 });
