@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             if (valorSelecionado === 'Escudo AWS (AWS SHIELD)') respostaCorreta = true;
                             break;
                         case 14:
-                            if (valorSelecionado === 'AWS DataSync') respostaCorreta = true;
+                            if (valorSelecionado === 'Configure uma conexão do AWS Direct Connect entre o data center local e a AWS', 'Crie uma conexão VPN entre um dispositivo local e um gateway privado virtual na VPC.') respostaCorreta = true;
                             break;
                         case 15:
                             if (valorSelecionado === 'AWS Storage Gateway') respostaCorreta = true;
