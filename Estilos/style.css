@@ -28,7 +28,7 @@ header nav {
 }
 
 header .logo {
-  max-height: 150px; 
+  max-height: 100px; 
 }
 
 nav ul {
@@ -91,20 +91,20 @@ main {
 }
 
 .text-content h1 {
-  font-size: 100px;
+  font-size: 70px;
   margin: 60px;
   padding-left: 50px;
   text-align: center;
   font-family: "Ubuntu Sans", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   font-style: italic;
   color: #fff;
 }
 
 .text-content p {
-  font-size: 40px;
+  font-size: 26px;
   margin-top: 20px;
-  font-family: "Caveat", cursive;
+  font-family: "Caveat", system-ui;
   text-align: center;
   color: #fff;
   padding: 150px;

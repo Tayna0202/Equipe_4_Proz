@@ -26,7 +26,7 @@ header nav {
 }
 
 header .logo {
-  max-height: 150px;
+  max-height: 100px;
 }
 
 nav ul {
@@ -160,7 +160,7 @@ footer {
 }
 
 footer .logo {
-  height: 300px;
+  height: 100px;
   width: auto;
 }
 
