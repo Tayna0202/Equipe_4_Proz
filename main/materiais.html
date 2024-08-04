@@ -1,49 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guru Certificate</title>
     <link rel="icon" href="/img/imagens/LOGO-ICON.png" type="image/png">
-    <link rel="stylesheet" href="styleCadastro.css">
-
+    <link rel="stylesheet" href="/styleMateriais.css">
 </head>
-
 <body>
     <header>
         <nav>
-            <a href="index.html"><img src="/img/imagens/logo guru.png" alt="Logo" class="logo"></a>
+            <a href="/main/index.html"><img src="/img/imagens/logo guru.png" alt="Logo" class="logo"></a>
             <ul>
-                <li><a href="/quemSomos.html">QUEM SOMOS</a></li>
-                <li><a href="/simulados.html">SIMULADOS</a></li>
-                <li><a href="/guia_cloud.html"> GUIA DE CLOUD</a></li>
-                <li><a href="/materiais.html">MATERIAIS</a></li>
+                <li><a href="/main/quemSomos.html">QUEM SOMOS</a></li>
+                <li><a href="/main/simulados.html">SIMULADOS</a></li>
+                <li><a href="/main/guia_cloud.html"> GUIA DE CLOUD</a></li>
+                <li><a href="/main/materiais.html">MATERIAIS</a></li>
             </ul>
-            <button class="login-btn">ENTRAR/CADASTRO</button>
+            <a href="/main/acesso.html">
+                <button class="login-btn">ENTRAR/CADASTRO</button>
+            </a>
         </nav>
     </header>
 
     <main>
         <section class="content">
-            <div class="container">
-                <div class="text-content">
-                    <h1>Cadastro</h1>
-                    <h2>E-mail</h2>
-                    <input type="text">
-                    <h2>Senha</h2>
-                    <input type="password">
-                    <h2>Confirmar Senha</h2>
-                    <input type="password">
-                    <button>Cadastrar</button>
-                </div>
-                <div class="links">
-                    <a id="entrar" href="/acesso.html">Entrar</a>
-                </div>
+            <div class="text-content">
+                <h1>Materiais de estudo</h1>
+                <li>Iniciante</li>
+                <p>Conceitos básicos para iniciante de computação, criação de contas e orientações de uso.</p>
+                <button class="acessar">Acessar</button>
+                <li>Intermediário</li>
+                <p>Gerenciamento e uso de serviços principais como EC2, S3 e RDS, o que fazer casos de uso.</p>
+                <button class="acessar">Acessar</button>
+                <li>Avançado</li>
+                <p>Configuração avançada de rede, segurança e monitoramento usando VPC, CloudWatch e CloudTrail.</p>
+                <button class="acessar">Acessar</button>
             </div>
+            <img class="livro" src="/img/imagens/livros.png" alt="imagem de livro">
         </section>
     </main>
-
+    
     <footer>
         <img src="/img/imagens/logo guru.png" alt="Logo" class="logo">
         <div class="footer-text">
@@ -64,5 +61,4 @@
         </div>
     </footer>
 </body>
-
 </html>
