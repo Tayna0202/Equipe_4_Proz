@@ -38,15 +38,21 @@ nav ul {
   font-size: 18px;
 }
 
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
 nav ul li a {
   color: white;
   text-decoration: none;
-  transition: color 0.5s, border-bottom 0.5s;
+  transition: color 0.1s;
+  border-bottom: none !important; /* Garantindo que a borda inferior seja removida */
 }
 
 nav ul li a:hover {
-  color: orange;
-  border-bottom: 2px solid orangered;
+  color: white;
+  border-bottom: none !important; /* Garantindo que a borda inferior não apareça no hover */
 }
 
 .login-btn {
@@ -65,6 +71,7 @@ nav ul li a:hover {
   background-color: darkblue;
   transform: scale(1.1);
 }
+
 main {
   flex: 1; 
   display: flex;
@@ -77,13 +84,19 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction:row;
+  flex-direction: row;
   width: 100%;
   text-align: center;
   color: white;
 }
 
-.simulados-content img{
+h1 {
+  text-align: center;
+  color: white; 
+  margin-bottom: 20px;
+}
+
+.simulados-content img {
   width: 25%;
   height: 25%;
 }
@@ -134,7 +147,6 @@ main {
   top: 50px;
 }
 
-
 footer {
   background-color: black;
   color: white;
@@ -147,7 +159,7 @@ footer {
 }
 
 footer .logo {
-  height: 100px; 
+  height: 300px; 
   width: auto; 
 }
 
