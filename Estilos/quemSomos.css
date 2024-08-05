@@ -162,3 +162,39 @@ footer .logo {
   width: auto; 
   margin-left: 10px;
 }
+
+.team {
+  padding: 50px 0;
+  text-align: center;
+  background-color: rgb(255, 145, 0);
+}
+
+.team h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  margin: 15px;
+  text-align: center;
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.team-member p {
+  margin-top: 10px;
+  color: #333;
+  font-size: 1.1em;
+}
+
