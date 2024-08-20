@@ -112,7 +112,7 @@ main {
 .livro{
   margin-top: -10px;
   width: 100%;
-  margin-right: -50px;
+  height: auto;
   z-index: 1;
 }
 
