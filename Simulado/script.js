@@ -22,8 +22,83 @@ document.addEventListener('DOMContentLoaded', function() {
             checkboxes.forEach(checkbox => {
                 checkbox.addEventListener('change', function() {
                     const respostasSelecionadas = Array.from(pergunta.querySelectorAll('input[type="checkbox"]:checked')).map(cb => cb.value);
-                    let respostasCorretas = getRespostasCorretas(indice);
-                    const respostaCorreta = arraysIguais(respostasSelecionadas, respostasCorretas);
+                    let respostaCorreta = false;
+                    switch (indice) {
+                        case 14:
+                            if (respostasSelecionadas.includes('a') && respostasSelecionadas.includes('b') && respostasSelecionadas.length === 2) {
+                                respostaCorreta = true;
+                            }
+                            break;
+
+                        case 17: 
+                        if (respostasSelecionadas.includes('b') && respostasSelecionadas.includes('d') && respostasSelecionadas.length === 2) {
+                            respostaCorreta = true;
+                        }
+                        break;
+
+                        case 22: 
+                        if (respostasSelecionadas.includes('a') && respostasSelecionadas.includes('d') && respostasSelecionadas.length === 2) {
+                            respostaCorreta = true;
+                        }
+                        break;
+
+                        case 24: 
+                        if (respostasSelecionadas.includes('a') && respostasSelecionadas.includes('d') && respostasSelecionadas.length === 2) {
+                            respostaCorreta = true;
+                        }
+                        break;
+
+                        case 32: 
+                        if (respostasSelecionadas.includes('a') && respostasSelecionadas.includes('b') && respostasSelecionadas.length === 2) {
+                            respostaCorreta = true;
+                        }
+                        break;
+
+                        case 34: 
+                        if (respostasSelecionadas.includes('b') && respostasSelecionadas.includes('e') && respostasSelecionadas.length === 2) {
+                            respostaCorreta = true;
+                        }
+                        break;
+
+                        case 44: 
+                        if (respostasSelecionadas.includes('b') && respostasSelecionadas.includes('d') && respostasSelecionadas.length === 2) {
+                            respostaCorreta = true;
+                        }
+                        break;
+
+                        case 46: 
+                        if (respostasSelecionadas.includes('c') && respostasSelecionadas.includes('e') && respostasSelecionadas.length === 2) {
+                            respostaCorreta = true;
+                        }
+                        break;
+
+                        case 50: 
+                        if (respostasSelecionadas.includes('a') && respostasSelecionadas.includes('c') && respostasSelecionadas.length === 2) {
+                            respostaCorreta = true;
+                        }
+                        break;
+
+                        case 60: 
+                        if (respostasSelecionadas.includes('b') && respostasSelecionadas.includes('c') && respostasSelecionadas.length === 2) {
+                            respostaCorreta = true;
+                        }
+                        break;
+
+                        case 61: 
+                        if (respostasSelecionadas.includes('a') && respostasSelecionadas.includes('e') && respostasSelecionadas.length === 2) {
+                            respostaCorreta = true;
+                        }
+                        break;
+
+                        case 64: 
+                        if (respostasSelecionadas.includes('c') && respostasSelecionadas.includes('e') && respostasSelecionadas.length === 2) {
+                            respostaCorreta = true;
+                        }
+                        break;
+
+                        default:
+                            break;
+                    }
                     
                     if (respostaCorreta) {
                         divResposta.textContent = 'Acertou Mizavil!';
@@ -85,17 +160,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         case 13:
                             if (valorSelecionado === 'Escudo AWS (AWS SHIELD)') respostaCorreta = true;
                             break;
-                        case 14:
-                            if (valorSelecionado === 'Configure uma conexão do AWS Direct Connect entre o data center local e a AWS', 'Crie uma conexão VPN entre um dispositivo local e um gateway privado virtual na VPC.') respostaCorreta = true;
-                            break;
                         case 15:
                             if (valorSelecionado === 'AWS Storage Gateway') respostaCorreta = true;
                             break;
                         case 16:
                             if (valorSelecionado === 'AWS Organizations') respostaCorreta = true;
-                            break;
-                        case 17:
-                            if (valorSelecionado === 'projeto') respostaCorreta = true;
                             break;
                         case 18:
                             if (valorSelecionado === 'AWS CloudTrail') respostaCorreta = true;
@@ -109,14 +178,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         case 21:
                             if (valorSelecionado === 'AWS Snowball') respostaCorreta = true;
                             break;
-                        case 22:
-                            if (valorSelecionado === 'servico-atualizacao-automatica-ec2') respostaCorreta = true;
-                            break;
                         case 23:
                             if (valorSelecionado === 'Calculadora de definição de preço da AWS') respostaCorreta = true;
-                            break;
-                        case 24:
-                            if (valorSelecionado === 'AWS-IoT') respostaCorreta = true;
                             break;
                         case 25:
                             if (valorSelecionado === 'Excelência operacional') respostaCorreta = true;
@@ -139,14 +202,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         case 31:
                             if (valorSelecionado === 'VPC Flow Logs') respostaCorreta = true;
                             break;
-                        case 32:
-                            if (valorSelecionado === 'servicos-simples-aws') respostaCorreta = true;
-                            break;
                         case 33:
                             if (valorSelecionado === 'Organizações da AWS') respostaCorreta = true;
-                            break;
-                        case 34:
-                            if (valorSelecionado === 'comunicacao-permitir-segura') respostaCorreta = true;
                             break;
                         case 35:
                             if (valorSelecionado === 'Coloque as instâncias do EC2 em duas zonas de disponibilidade separadas na mesma região da AWS.') respostaCorreta = true;
@@ -175,14 +232,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         case 43:
                             if (valorSelecionado === 'AWS Shield') respostaCorreta = true;
                             break;
-                        case 44:
-                            if (valorSelecionado === 'AWS-Kinesis') respostaCorreta = true;
-                            break;
                         case 45:
                             if (valorSelecionado === 'AWS Artifact') respostaCorreta = true;
-                            break;
-                        case 46:
-                            if (valorSelecionado === 'vpc') respostaCorreta = true;
                             break;
                         case 47:
                             if (valorSelecionado === 'Uma VPC pode abranger todas as zonas de disponibilidade em uma região da AWS.') respostaCorreta = true;
@@ -193,11 +244,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         case 49:
                             if (valorSelecionado === 'Amazon Simple Queue Service (Amazon SQS) e AWS Lambda') respostaCorreta = true;
                             break;
-                        case 50:
-                            if (valorSelecionado === 'grupos-seguranca') respostaCorreta = true;
-                            break;
                         case 51:
-                            if (valorSelecionado === ' <!-- QUESTÃO ESPECIAL DE MULTIESCOLHA-->') respostaCorreta = true;
+                            if (valorSelecionado === 'AWS Pricing Calculator') respostaCorreta = true;
                             break;
                         case 52:
                             if (valorSelecionado === 'Availability Zone') respostaCorreta = true;
@@ -223,20 +271,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         case 59:
                             if (valorSelecionado === 'Regiões da AWS') respostaCorreta = true;
                             break;
-                        case 60:
-                            if (valorSelecionado === 'cargas-dinamicas-aws') respostaCorreta = true;
-                            break;
-                        case 61:
-                            if (valorSelecionado === 'designar-estrategia-crip') respostaCorreta = true;
-                            break;
                         case 62:
                             if (valorSelecionado === 'Crie uma função do IAM com as permissões necessárias. Anexe a função à instância do EC2.') respostaCorreta = true;
                             break;
                         case 63:
                             if (valorSelecionado === 'AWS WAF') respostaCorreta = true;
-                            break;
-                        case 64:
-                            if (valorSelecionado === '') respostaCorreta = true;
                             break;
 
                         default:
