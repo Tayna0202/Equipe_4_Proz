@@ -1,6 +1,7 @@
+
 body {
-    background-color: #FFF176; 
-    color: #424242; 
+    background-color: #FFF176; /* Amarelo suave */
+    color: #424242; /* Cinza escuro para o texto */
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -10,21 +11,21 @@ body {
 .container {
     max-width: 800px;
     margin: auto;
-    padding: 20px;
-    background-color: #FFF; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    padding: 100px;
+    background-color: #FFF; /* Fundo branco */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
     border-radius: 8px;
 }
 
 h1 {
     text-align: center;
-    color: black; 
+    color: #FFB74D; /* Laranja */
     margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 21px;
+    margin-bottom: 20px;
 }
 
 ol {
@@ -36,10 +37,12 @@ ol {
 li {
     counter-increment: question-counter;
     margin-bottom: 20px;
+    border-bottom: 1px solid #E0E0E0; /* Linha cinza clara entre perguntas */
+    padding-bottom: 10px;
 }
 
 li:last-child {
-    border-bottom: none; 
+    border-bottom: none; /* Remover a linha na última pergunta */
 }
 
 li:before {
@@ -52,7 +55,7 @@ ul {
 }
 
 ul li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 ul li:before {
@@ -68,16 +71,30 @@ ul li:last-child:after {
 }
 
 .answer {
-    margin-top: 10px;
+    margin-top: 15px;
     font-weight: bold;
 }
 
 .answer.correta {
-    color: #388E3C; 
+    color: #388E3C; /* Verde para respostas corretas */
 }
 
 .answer.incorreta {
-    color: #D32F2F; 
+    color: #D32F2F; /* Vermelho para respostas incorretas */
 }
 
+.correta {
+    color: green;
+}
 
+.incorreta {
+    color: red;
+}
+
+.aprovado {
+    color: green;
+}
+
+.reprovado {
+    color: red;
+}

@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const perguntas = document.querySelectorAll('ol > li');
     let indiceAtual = 0;
+    let acertos = 0;
 
     function mostrarPergunta(indice) {
         perguntas.forEach((pergunta, i) => {
@@ -11,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function atualizarNavegacao() {
         document.getElementById('btnAnterior').style.display = indiceAtual > 0 ? 'inline' : 'none';
         document.getElementById('btnProxima').style.display = indiceAtual < perguntas.length - 1 ? 'inline' : 'none';
+        document.getElementById('btnFinalizar').style.display = indiceAtual === perguntas.length - 1 ? 'inline' : 'none';
     }
 
     perguntas.forEach((pergunta, indice) => {
@@ -18,11 +20,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const radios = pergunta.querySelectorAll('input[type="radio"]');
         const divResposta = pergunta.querySelector('.answer');
 
-        if (checkboxes.length > 0) { 
+        if (checkboxes.length > 0) {
             checkboxes.forEach(checkbox => {
                 checkbox.addEventListener('change', function() {
                     const respostasSelecionadas = Array.from(pergunta.querySelectorAll('input[type="checkbox"]:checked')).map(cb => cb.value);
                     let respostaCorreta = false;
+
                     switch (indice) {
                         case 14:
                             if (respostasSelecionadas.includes('a') && respostasSelecionadas.includes('b') && respostasSelecionadas.length === 2) {
@@ -30,80 +33,81 @@ document.addEventListener('DOMContentLoaded', function() {
                             }
                             break;
 
-                        case 17: 
-                        if (respostasSelecionadas.includes('b') && respostasSelecionadas.includes('d') && respostasSelecionadas.length === 2) {
-                            respostaCorreta = true;
-                        }
-                        break;
+                        case 17:
+                            if (respostasSelecionadas.includes('b') && respostasSelecionadas.includes('d') && respostasSelecionadas.length === 2) {
+                                respostaCorreta = true;
+                            }
+                            break;
 
-                        case 22: 
-                        if (respostasSelecionadas.includes('a') && respostasSelecionadas.includes('d') && respostasSelecionadas.length === 2) {
-                            respostaCorreta = true;
-                        }
-                        break;
+                        case 22:
+                            if (respostasSelecionadas.includes('a') && respostasSelecionadas.includes('d') && respostasSelecionadas.length === 2) {
+                                respostaCorreta = true;
+                            }
+                            break;
 
-                        case 24: 
-                        if (respostasSelecionadas.includes('a') && respostasSelecionadas.includes('d') && respostasSelecionadas.length === 2) {
-                            respostaCorreta = true;
-                        }
-                        break;
+                        case 24:
+                            if (respostasSelecionadas.includes('a') && respostasSelecionadas.includes('d') && respostasSelecionadas.length === 2) {
+                                respostaCorreta = true;
+                            }
+                            break;
 
-                        case 32: 
-                        if (respostasSelecionadas.includes('a') && respostasSelecionadas.includes('b') && respostasSelecionadas.length === 2) {
-                            respostaCorreta = true;
-                        }
-                        break;
+                        case 32:
+                            if (respostasSelecionadas.includes('a') && respostasSelecionadas.includes('b') && respostasSelecionadas.length === 2) {
+                                respostaCorreta = true;
+                            }
+                            break;
 
-                        case 34: 
-                        if (respostasSelecionadas.includes('b') && respostasSelecionadas.includes('e') && respostasSelecionadas.length === 2) {
-                            respostaCorreta = true;
-                        }
-                        break;
+                        case 34:
+                            if (respostasSelecionadas.includes('b') && respostasSelecionadas.includes('e') && respostasSelecionadas.length === 2) {
+                                respostaCorreta = true;
+                            }
+                            break;
 
-                        case 44: 
-                        if (respostasSelecionadas.includes('b') && respostasSelecionadas.includes('d') && respostasSelecionadas.length === 2) {
-                            respostaCorreta = true;
-                        }
-                        break;
+                        case 44:
+                            if (respostasSelecionadas.includes('b') && respostasSelecionadas.includes('d') && respostasSelecionadas.length === 2) {
+                                respostaCorreta = true;
+                            }
+                            break;
 
-                        case 46: 
-                        if (respostasSelecionadas.includes('c') && respostasSelecionadas.includes('e') && respostasSelecionadas.length === 2) {
-                            respostaCorreta = true;
-                        }
-                        break;
+                        case 46:
+                            if (respostasSelecionadas.includes('c') && respostasSelecionadas.includes('e') && respostasSelecionadas.length === 2) {
+                                respostaCorreta = true;
+                            }
+                            break;
 
-                        case 50: 
-                        if (respostasSelecionadas.includes('a') && respostasSelecionadas.includes('c') && respostasSelecionadas.length === 2) {
-                            respostaCorreta = true;
-                        }
-                        break;
+                        case 50:
+                            if (respostasSelecionadas.includes('a') && respostasSelecionadas.includes('c') && respostasSelecionadas.length === 2) {
+                                respostaCorreta = true;
+                            }
+                            break;
 
-                        case 60: 
-                        if (respostasSelecionadas.includes('b') && respostasSelecionadas.includes('c') && respostasSelecionadas.length === 2) {
-                            respostaCorreta = true;
-                        }
-                        break;
+                        case 60:
+                            if (respostasSelecionadas.includes('b') && respostasSelecionadas.includes('c') && respostasSelecionadas.length === 2) {
+                                respostaCorreta = true;
+                            }
+                            break;
 
-                        case 61: 
-                        if (respostasSelecionadas.includes('a') && respostasSelecionadas.includes('e') && respostasSelecionadas.length === 2) {
-                            respostaCorreta = true;
-                        }
-                        break;
+                        case 61:
+                            if (respostasSelecionadas.includes('a') && respostasSelecionadas.includes('e') && respostasSelecionadas.length === 2) {
+                                respostaCorreta = true;
+                            }
+                            break;
 
-                        case 64: 
-                        if (respostasSelecionadas.includes('c') && respostasSelecionadas.includes('e') && respostasSelecionadas.length === 2) {
-                            respostaCorreta = true;
-                        }
-                        break;
+                        case 64:
+                            if (respostasSelecionadas.includes('c') && respostasSelecionadas.includes('e') && respostasSelecionadas.length === 2) {
+                                respostaCorreta = true;
+                            }
+                            break;
 
                         default:
                             break;
                     }
-                    
+
                     if (respostaCorreta) {
                         divResposta.textContent = 'Acertou Mizavil!';
                         divResposta.classList.add('correta');
                         divResposta.classList.remove('incorreta');
+                        acertos++;
                     } else {
                         divResposta.textContent = 'Que Pena, Tente outra vez';
                         divResposta.classList.remove('correta');
@@ -281,11 +285,12 @@ document.addEventListener('DOMContentLoaded', function() {
                         default:
                             break;
                     }
-                    
+
                     if (respostaCorreta) {
                         divResposta.textContent = 'Acertou Mizavil!';
                         divResposta.classList.add('correta');
                         divResposta.classList.remove('incorreta');
+                        acertos++;
                     } else {
                         divResposta.textContent = 'Que Pena, Tente outra vez';
                         divResposta.classList.remove('correta');
@@ -296,148 +301,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    function getRespostasCorretas(indice) {
-        switch (indice) {
-            case 0:
-                return ['Postos avançados da AWS'];
-            case 1:
-                return ['Para permitir a comunicação entre a VPC e a internet'];
-            case 2:
-                return ['AWS Transit Gateway'];
-            case 3:
-                return ['Backup and restore'];
-            case 4:
-                return ['Projetar estratégias de criptografia em repouso'];
-            case 5:
-                return ['Armazenamento de instâncias do Amazon EC2'];
-            case 6:
-                return ['Amazon AppStream2.0'];
-            case 7:
-                return ['Segurança'];
-            case 8:
-                return ['Postos avançados da AWS'];
-            case 9:
-                return ['O usuário raiz é a primeira identidade de login disponível quando uma conta da AWS é criada.'];
-            case 10:
-                return ['Valor-chave'];
-            case 11:
-                return ['Preços pré-pagos'];
-            case 12:
-                return ['Amazon CloudFront'];
-            case 13:
-                return ['Escudo AWS (AWS SHIELD)'];
-            case 14:
-                return ['AWS DataSync'];
-            case 15:
-                return ['AWS Storage Gateway'];
-            case 16:
-                return ['AWS Organizations'];
-            case 17:
-                return ['projeto'];
-            case 18:
-                return ['AWS CloudTrail'];
-            case 19:
-                return ['AWS KMS'];
-            case 20:
-                return ['Não há compromissos de custos iniciais'];
-            case 21:
-                return ['AWS Snowball'];
-            case 22:
-                return ['servico-atualizacao-automatica-ec2'];
-            case 23:
-                return ['Calculadora de definição de preço da AWS'];
-            case 24:
-                return ['AWS-IoT'];
-            case 25:
-                return ['Excelência operacional'];
-            case 26:
-                return ['Amazon GuardDuty'];
-            case 27:
-                return ['Use o AWS CloudTrail para ver se o security group foi alterado.'];
-            case 28:
-                return ['ACL de rede'];
-            case 29:
-                return ['AWS IAM Access Analyzer'];
-            case 30:
-                return ['AWS Global Accelerator'];
-            case 31:
-                return ['VPC Flow Logs'];
-            case 32:
-                return ['servicos-simples-aws'];
-            case 33:
-                return ['Organizações da AWS'];
-            case 34:
-                return ['comunicacao-permitir-segura'];
-            case 35:
-                return ['Coloque as instâncias do EC2 em duas zonas de disponibilidade separadas na mesma região da AWS.'];
-            case 36:
-                return ['Amazon Comprehend'];
-            case 37:
-                return ['AWS Organizations'];
-            case 38:
-                return ['Amazon Polly'];
-            case 39:
-                return ['Grupos de segurança'];
-            case 40:
-                return ['Zonas locais da AWS'];
-            case 41:
-                return ['Amazon Simple Queue Service (Amazon SQS)'];
-            case 42:
-                return ['VPC peering'];
-            case 43:
-                return ['AWS Shield'];
-            case 44:
-                return ['AWS-Kinesis'];
-            case 45:
-                return ['AWS Artifact'];
-            case 46:
-                return ['vpc'];
-            case 47:
-                return ['Uma VPC pode abranger todas as zonas de disponibilidade em uma região da AWS.'];
-            case 48:
-                return ['Grupo de segurança'];
-            case 49:
-                return ['Amazon Simple Queue Service (Amazon SQS) e AWS Lambda'];
-            case 50:
-                return ['grupos-seguranca'];
-            case 51:
-                return [' <!-- QUESTÃO ESPECIAL DE MULTIESCOLHA-->'];
-            case 52:
-                return ['Availability Zone'];
-            case 53:
-                return ['Sub-redes; Gateways de Internet'];
-            case 54:
-                return ['Controle de versão do S3'];
-            case 55:
-                return ['Evite a arquitetura monolítica segmentando cargas de trabalho.'];
-            case 56:
-                return ['AWS Fargate'];
-            case 57:
-                return ['Ilimitado'];
-            case 58:
-                return ['Todas as instâncias reservadas iniciais'];
-            case 59:
-                return ['Regiões da AWS'];
-            case 60:
-                return ['cargas-dinamicas-aws'];
-            case 61:
-                return ['designar-estrategia-crip'];
-            case 62:
-                return ['Crie uma função do IAM com as permissões necessárias. Anexe a função à instância do EC2.'];
-            case 63:
-                return ['AWS WAF'];
-            case 64:
-                return [''];
-
-            default:
-                return [];
+    document.getElementById('btnAnterior').addEventListener('click', function() {
+        if (indiceAtual > 0) {
+            indiceAtual--;
+            mostrarPergunta(indiceAtual);
+            atualizarNavegacao();
         }
-    }
-
-    function arraysIguais(arr1, arr2) {
-        if (arr1.length !== arr2.length) return false;
-        return arr1.every(val => arr2.includes(val)) && arr2.every(val => arr1.includes(val));
-    }
+    });
 
     document.getElementById('btnProxima').addEventListener('click', function() {
         if (indiceAtual < perguntas.length - 1) {
@@ -447,12 +317,27 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    document.getElementById('btnAnterior').addEventListener('click', function() {
-        if (indiceAtual > 0) {
-            indiceAtual--;
-            mostrarPergunta(indiceAtual);
-            atualizarNavegacao();
+    document.getElementById('btnFinalizar').addEventListener('click', function() {
+        const percentualAcertos = (acertos / perguntas.length) * 100;
+        console.log(`Percentual de acertos: ${percentualAcertos.toFixed(2)}%`); // Debugging
+
+        const resultadoFinal = document.getElementById('resultadoFinal');
+        const mensagemFinal = document.getElementById('mensagemFinal');
+        const percentualAcertoTexto = document.getElementById('percentualAcerto');
+
+        percentualAcertoTexto.textContent = `Você acertou ${percentualAcertos.toFixed(2)}% das perguntas.`;
+
+        if (percentualAcertos >= 70) {
+            mensagemFinal.textContent = 'Parabéns, você foi aprovado!';
+            mensagemFinal.classList.add('aprovado');
+            mensagemFinal.classList.remove('reprovado');
+        } else {
+            mensagemFinal.textContent = 'Infelizmente, você foi reprovado.';
+            mensagemFinal.classList.add('reprovado');
+            mensagemFinal.classList.remove('aprovado');
         }
+
+        resultadoFinal.style.display = 'block';
     });
 
     mostrarPergunta(indiceAtual);

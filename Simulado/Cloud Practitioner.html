@@ -809,7 +809,7 @@
                             Qual é a solução operacionalmente mais eficiente para delegar permissões?</h2>
                         <ul>
                             <li><input type="radio" name="q63" value="Crie um usuário do IAM e use sua chave de acesso e chave de acesso secreta no aplicativo."> Crie um usuário do IAM e use sua chave de acesso e chave de acesso secreta no aplicativo.</li>
-                            <li><input type="radio" name="q63" value="ACrie um usuário do IAM e use sua chave de acesso e chave de acesso secreta para criar um perfil da CLI na instância do EC2"> Crie um usuário do IAM e use sua chave de acesso e chave de acesso secreta para criar um perfil da CLI na instância do EC2</li>
+                            <li><input type="radio" name="q63" value="Crie um usuário do IAM e use sua chave de acesso e chave de acesso secreta para criar um perfil da CLI na instância do EC2"> Crie um usuário do IAM e use sua chave de acesso e chave de acesso secreta para criar um perfil da CLI na instância do EC2</li>
                             <li><input type="radio" name="q63" value="Crie uma função do IAM com as permissões necessárias. Anexe a função ao usuário administrativo do IAM."> Crie uma função do IAM com as permissões necessárias. Anexe a função ao usuário administrativo do IAM.</li>
                             <li><input type="radio" name="q63" value="Crie uma função do IAM com as permissões necessárias. Anexe a função à instância do EC2."> Crie uma função do IAM com as permissões necessárias. Anexe a função à instância do EC2.</li>
                         </ul>
@@ -841,12 +841,17 @@
                         </ul>
                         <div class="answer" id="answer65"></div>
                     </li>
-        </ol>
-        <button id="btnAnterior">Anterior</button>
-        <button id="btnProxima">Próxima</button>
-    </div>
-    <script src="script.js"></script>
-   
+                </ol>
 
-</body>
-</html>
+                <button id="btnAnterior">Anterior</button>
+                <button id="btnProxima">Próxima</button>
+                <button id="btnFinalizar">Finalizar</button>
+            
+                <div id="resultadoFinal" style="display: none;">
+                    <p id="percentualAcerto"></p>
+                    <p id="mensagemFinal"></p>
+                </div>
+            
+                <script src="script.js"></script>
+            </body>
+            </html>
