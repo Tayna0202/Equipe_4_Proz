@@ -270,11 +270,37 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     document.getElementById('btnFinalizar').addEventListener('click', function() {
-        const porcentagem = Math.round((acertos / perguntas.length) * 100);
-        const mensagem = porcentagem >= 70 ? 'Aprovado!' : 'Reprovado!';
-        alert(`Você acertou ${acertos} de ${perguntas.length} perguntas (${porcentagem}%). ${mensagem}`);
+        // Calcular a porcentagem de acertos
+        const porcentagemAcertos = (acertos / perguntas.length) * 100;
+    
+        // Determinar se o usuário está aprovado ou reprovado
+        const statusFinal = porcentagemAcertos >= 70 ? 'Aprovado' : 'Reprovado';
+    
+        // Atualizar a mensagem do resultado com a porcentagem e status
+        document.getElementById('resultadoMensagem').textContent = `Você acertou ${acertos} de ${perguntas.length} perguntas. (${porcentagemAcertos.toFixed(2)}% de acertos). Status: ${statusFinal}`;
+    
+        // Exibir o modal
+        const modal = document.getElementById('resultadoModal');
+        modal.style.display = 'block';
+    
+        // Fechar o modal ao clicar no botão "Fechar"
+        document.getElementById('btnFecharModal').addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+    
+        // Fechar o modal ao clicar no "X"
+        document.querySelector('.modal .close').addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+    
+        // Fechar o modal ao clicar fora da área do modal
+        window.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
     });
-
+    
     mostrarPergunta(indiceAtual);
     atualizarNavegacao();
     iniciarTimer();
