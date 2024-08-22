@@ -98,3 +98,61 @@ ul li:last-child:after {
 .reprovado {
     color: red;
 }
+
+#timer {
+    font-size: 1.5em;       /* Aumenta o tamanho da fonte */
+    font-weight: bold;      /* Deixa o texto em negrito */
+    color: #FF4500;         /* Define a cor do texto (laranja avermelhado) */
+    text-align: center;     /* Centraliza o texto no div */
+    padding: 10px;          /* Adiciona um espaçamento interno */
+    background-color: #F0F0F0; /* Define uma cor de fundo suave */
+    border: 2px solid #FF4500; /* Adiciona uma borda com a mesma cor do texto */
+    border-radius: 8px;     /* Arredonda os cantos do div */
+    margin-bottom: 20px;    /* Adiciona um espaço abaixo do timer */
+}
+
+button {
+    font-size: 1.2em;            /* Aumenta o tamanho da fonte */
+    font-weight: bold;           /* Deixa o texto em negrito */
+    color: #FFFFFF;              /* Cor do texto branco */
+    background-color: #4CAF50;   /* Cor de fundo verde */
+    border: none;                /* Remove borda padrão */
+    border-radius: 5px;          /* Arredonda os cantos dos botões */
+    padding: 10px 20px;          /* Adiciona espaçamento interno */
+    cursor: pointer;             /* Altera o cursor para 'pointer' */
+    margin: 5px;                 /* Adiciona espaço entre os botões */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave para mudanças de cor */
+}
+
+button:hover {
+    background-color: #45a049;   /* Cor de fundo ao passar o mouse */
+}
+
+#btnFinalizar {
+    background-color: #FF4500;   /* Cor de fundo laranja avermelhado para o botão 'Finalizar' */
+}
+
+#btnFinalizar:hover {
+    background-color: #E63900;   /* Cor de fundo ao passar o mouse no botão 'Finalizar' */
+}
+
+#resultadoFinal {
+    text-align: center;          /* Centraliza o texto */
+    margin-top: 20px;            /* Adiciona um espaço acima da div */
+    font-size: 1.3em;            /* Aumenta o tamanho da fonte */
+    color: #333;                 /* Define a cor do texto */
+}
+
+#mensagemFinal.aprovado {
+    color: #4CAF50;              /* Verde para mensagem de aprovação */
+}
+
+#mensagemFinal.reprovado {
+    color: #FF4500;              /* Laranja avermelhado para mensagem de reprovação */
+}
+
+.pergunta-desabilitada input {
+    pointer-events: none; /* Desabilita a interação com os inputs */
+    opacity: 0.5; /* Diminui a opacidade para indicar que está desabilitado */
+}
+
