@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         checkboxes.forEach(cb => cb.disabled = true);
 
                         if (respostaCorreta()) {
-                            divResposta.textContent = 'Acertou Mizavil!';
+                            divResposta.textContent = 'Acertou Míseravi!';
                             divResposta.classList.add('correta');
                             divResposta.classList.remove('incorreta');
                             acertos++;
@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
 
                     if (respostaCorreta()) {
-                        divResposta.textContent = 'Acertou Mizavil!';
+                        divResposta.textContent = 'Acertou Míseravi!';
                         divResposta.classList.add('correta');
                         divResposta.classList.remove('incorreta');
                         acertos++;

@@ -162,3 +162,47 @@ footer .logo {
   margin-left: 10px;
 }
 
+/* Estilos para os botões */
+.acessar {
+  background-color: #FF9900;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.acessar:hover {
+  background-color: #CC7A00;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-content {
+  max-width: 60%;
+}
+
+.livro {
+  max-width: 30%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+

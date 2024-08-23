@@ -1,0 +1,215 @@
+
+body {
+    background-color: #FFF176; /* Amarelo suave */
+    color: #424242; /* Cinza escuro para o texto */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 100px;
+    background-color: #FFF; /* Fundo branco */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #FFB74D; /* Laranja */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: question-counter;
+    padding: 0;
+}
+
+li {
+    counter-increment: question-counter;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #E0E0E0; /* Linha cinza clara entre perguntas */
+    padding-bottom: 10px;
+}
+
+li:last-child {
+    border-bottom: none; /* Remover a linha na última pergunta */
+}
+
+li:before {
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li:before {
+    content: "";
+}
+
+ul li:not(:last-child):after {
+    content: " ";
+}
+
+ul li:last-child:after {
+    content: "";
+}
+
+.answer {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.answer.correta {
+    color: #388E3C; /* Verde para respostas corretas */
+}
+
+.answer.incorreta {
+    color: #D32F2F; /* Vermelho para respostas incorretas */
+}
+
+.correta {
+    color: green;
+}
+
+.incorreta {
+    color: red;
+}
+
+.aprovado {
+    color: green;
+}
+
+.reprovado {
+    color: red;
+}
+
+#timer {
+    font-size: 1.5em;       /* Aumenta o tamanho da fonte */
+    font-weight: bold;      /* Deixa o texto em negrito */
+    color: #FF4500;         /* Define a cor do texto (laranja avermelhado) */
+    text-align: center;     /* Centraliza o texto no div */
+    padding: 10px;          /* Adiciona um espaçamento interno */
+    background-color: #F0F0F0; /* Define uma cor de fundo suave */
+    border: 2px solid #FF4500; /* Adiciona uma borda com a mesma cor do texto */
+    border-radius: 8px;     /* Arredonda os cantos do div */
+    margin-bottom: 20px;    /* Adiciona um espaço abaixo do timer */
+}
+
+button {
+    font-size: 1.2em;            /* Aumenta o tamanho da fonte */
+    font-weight: bold;           /* Deixa o texto em negrito */
+    color: #FFFFFF;              /* Cor do texto branco */
+    background-color: #4CAF50;   /* Cor de fundo verde */
+    border: none;                /* Remove borda padrão */
+    border-radius: 5px;          /* Arredonda os cantos dos botões */
+    padding: 10px 20px;          /* Adiciona espaçamento interno */
+    cursor: pointer;             /* Altera o cursor para 'pointer' */
+    margin: 5px;                 /* Adiciona espaço entre os botões */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave para mudanças de cor */
+}
+
+button:hover {
+    background-color: #45a049;   /* Cor de fundo ao passar o mouse */
+}
+
+#btnFinalizar {
+    background-color: #FF4500;   /* Cor de fundo laranja avermelhado para o botão 'Finalizar' */
+}
+
+#btnFinalizar:hover {
+    background-color: #E63900;   /* Cor de fundo ao passar o mouse no botão 'Finalizar' */
+}
+
+#resultadoFinal {
+    text-align: center;          /* Centraliza o texto */
+    margin-top: 20px;            /* Adiciona um espaço acima da div */
+    font-size: 1.3em;            /* Aumenta o tamanho da fonte */
+    color: #333;                 /* Define a cor do texto */
+}
+
+#mensagemFinal.aprovado {
+    color: #4CAF50;              /* Verde para mensagem de aprovação */
+}
+
+#mensagemFinal.reprovado {
+    color: #FF4500;              /* Laranja avermelhado para mensagem de reprovação */
+}
+
+.pergunta-desabilitada input {
+    pointer-events: none; /* Desabilita a interação com os inputs */
+    opacity: 0.5; /* Diminui a opacidade para indicar que está desabilitado */
+}
+
+/* Estilos do modal */
+.modal {
+    display: none; /* Ocultar o modal por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Cor de fundo preta */
+    background-color: rgba(0,0,0,0.4); /* Fundo transparente */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049; /* Verde mais escuro */
+}
+
+
