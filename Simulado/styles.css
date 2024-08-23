@@ -37,7 +37,7 @@ ol {
 li {
     counter-increment: question-counter;
     margin-bottom: 20px;
-    border-bottom: 1px solid #E0E0E0; /* Linha cinza clara entre perguntas */
+    border-bottom: #E0E0E0; /* Linha cinza clara entre perguntas */
     padding-bottom: 10px;
 }
 
