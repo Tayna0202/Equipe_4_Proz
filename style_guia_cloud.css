@@ -171,6 +171,19 @@ footer .logo {
   margin-left: 10px;
 }
 
+.mapa_mental {
+  color: #f0f0f0;
+  padding: auto;
+  margin-top: auto;
+  padding: auto;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 details {
             margin-bottom: 10px;
             padding: 10px;
@@ -194,15 +207,3 @@ details {
           button:hover {
               background-color: #0056b3;
           }
-
-.mapa_mental {
-  color: #f0f0f0;
-  padding: auto;
-  margin-top: auto;
-  padding: auto;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
