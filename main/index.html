@@ -10,17 +10,29 @@
 <body>
     <header>
         <nav>
-          <a href="/main/index.html"><img src="/img/imagens/logo guru.png" alt="Logo" class="logo"></a>
-          <ul>
-            <li><a href="/main/quemSomos.html">QUEM SOMOS</a></li>
-            <li><a href="/main/simulados.html">SIMULADOS</a></li>
-            <li><a href="/main/guia_cloud.html">GUIA DE CLOUD</a></li>
-            <li><a href="/main/materiais.html">MATERIAIS</a></li>
-          </ul>
-          <a href="/main/acesso.html">
-              <button class="login-btn">ENTRAR/CADASTRO</button>
-          </a>
+            <a href="/main/index.html"><img src="/img/imagens/logo guru.png" alt="Logo" class="logo"></a>
+            <ul class="nav-menu">
+                <li><a href="/main/quemSomos.html">QUEM SOMOS</a></li>
+                <li><a href="/main/simulados.html">SIMULADOS</a></li>
+                <li><a href="/main/guia_cloud.html">GUIA DE CLOUD</a></li>
+                <li><a href="/main/materiais.html">MATERIAIS</a></li>
+            </ul>
+            <a href="/main/acesso.html">
+                <button class="login-btn">ENTRAR/CADASTRO</button>
+            </a>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span class="menu-icon"></span>
+            </button>
         </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="/main/quemSomos.html">QUEM SOMOS</a></li>
+                <li><a href="/main/simulados.html">SIMULADOS</a></li>
+                <li><a href="/main/guia_cloud.html">GUIA DE CLOUD</a></li>
+                <li><a href="/main/materiais.html">MATERIAIS</a></li>
+                <li><a href="/main/acesso.html">ENTRAR/CADASTRO</a></li>
+            </ul>
+        </div>
     </header>
 
     <main>
@@ -52,5 +64,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="/Estilos/menu.js"></script>
+    <script src="/main/script.js"></script>
 </body>
 </html>

@@ -2,9 +2,26 @@ document.addEventListener('DOMContentLoaded', function() {
     const perguntas = document.querySelectorAll('ol > li');
     let indiceAtual = 0;
     let acertos = 0;
-    const tempoTotal = 90 * 60 * 1000; // 90 minutos em milissegundos
+    const tempoTotal = 90 * 60 * 1000; 
     let tempoRestante = tempoTotal;
     let timerInterval;
+
+    perguntas.forEach(pergunta => {
+        pergunta.style.userSelect = 'none';
+    });
+
+    perguntas.forEach(pergunta => {
+        pergunta.addEventListener('copy', function(event) {
+            event.preventDefault();
+            return false;
+        });
+    });
+
+    function mostrarPergunta(indice) {
+        perguntas.forEach((pergunta, i) => {
+            pergunta.style.display = i === indice ? 'block' : 'none';
+        });
+    }
 
     function mostrarPergunta(indice) {
         perguntas.forEach((pergunta, i) => {
