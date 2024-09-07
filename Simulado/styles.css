@@ -24,7 +24,12 @@ h1 {
 }
 
 h2 {
-    font-size: 21px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
@@ -97,6 +102,10 @@ ul li:last-child:after {
 
 .reprovado {
     color: red;
+}
+
+.alerta {
+    color: rgb(255, 153, 0);
 }
 
 #timer {

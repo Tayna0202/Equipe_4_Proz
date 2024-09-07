@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulados - Guru Certificate</title>
     <link rel="icon" href="/img/imagens/LOGO-ICON.png" type="image/png">
-    <link rel="stylesheet" href="/Simulado/styles.css">
+    <link rel="stylesheet" href="/Estilos/header.css">
     <link rel="stylesheet" href="/Estilos/simulados.css">
+    <link rel="stylesheet" href="/Estilos/cssDefault.css">
+    <link rel="stylesheet" href="/Estilos/footer.css">
 </head>
 <body>
     <header>
-        <nav>
+        <div class="menu-button">
+            <img id="menu-button" src="https://www.clipartmax.com/png/full/77-773806_call-610-465-white-hamburger-menu-icon-png.png">
+        </div>
+        <nav class="menu">
             <a href="/main/index.html"><img src="/img/imagens/logo guru.png" alt="Logo" class="logo"></a>
-            <ul>
+            <ul class="nav-menu">
                 <li><a href="/main/quemSomos.html">QUEM SOMOS</a></li>
                 <li><a href="/main/simulados.html">SIMULADOS</a></li>
                 <li><a href="/main/guia_cloud.html">GUIA DE CLOUD</a></li>
@@ -22,40 +27,64 @@
                 <button class="login-btn">ENTRAR/CADASTRO</button>
             </a>
         </nav>
+        <div class="mobile-menu" id="mobile-menu">
+            <ul>
+                <li><a href="/main/quemSomos.html">QUEM SOMOS</a></li>
+                <li><a href="/main/simulados.html">SIMULADOS</a></li>
+                <li><a href="/main/guia_cloud.html">GUIA DE CLOUD</a></li>
+                <li><a href="/main/materiais.html">MATERIAIS</a></li>
+                <li><a href="/main/acesso.html">ENTRAR/CADASTRO</a></li>
+            </ul>
+        </div>
     </header>
 
     <main>
-        <section class="simulados-content">
-            <div>
-                <h1>Simulados</h1>
-                <p>Selecione um dos simulados abaixo para começar:</p>
-                <div class="simulados-links">
-                    <a href="/Simulado/Cloud Practitioner.html" class="simulado-link">Cloud Practitioner CLF-02</a>
-                    <a href="/Simulado 2/Associate Architect.html" class="simulado-link">Solutions Architect - SSA</a>
+        <div class="simulados-container">
+            <div class="simulados-content">
+                <div class="titulo-content">
+                    <h1>Simulados</h1>
+                </div>
+                <div class="descricao-content">
+                    <h1>Selecione um dos simulados abaixo para começar:</h1>
+                </div>
+                <div class="botoes-content">
+                    <button onclick="window.location.href='/Simulado/Cloud Practitioner.html'">Cloud Practitioner CLF-02</button>
+                    <button onclick="window.location.href='/Simulado 2/Associate Architect.html'">Solutions Architect - SSA</button>
                 </div>
             </div>
-            <img src="/img/imagens/IMG-SIMULADO.png" alt="Simulado" class="imagem-simulados">
-        </section>
+            <div class="simulados-imagem">
+                <img src="/img/imagens/IMG-SIMULADO.png" alt="Simulado" class="imagem-simulados">
+            </div>
+        </div>
     </main>
     
     <footer>
-        <img src="/img/imagens/logo guru.png" alt="Logo" class="logo">
+        <div class="footer-logo">
+            <img src="/img/imagens/logo guru.png" alt="Logo" class="logo">
+        </div>
         <div class="footer-text">
             <p>Desbrave o conhecimento. Transforme o futuro</p>
-            <p>"Continue estudando e alcance sua certificação AWS! Sucesso nos estudos!"</p>
-            <p>&copy; 2024 Guru Certificate. Todos os direitos reservados.</p>
+            <p>"Continue estudando e alcance sua certificação AWS! Sucesso nos estudos!"</p><br><br><br>
+            <p>&copy; 2024 Guru Certificate. Todos os direitos
+                reservados.</p>
         </div>
-        <div class="canto-inferior-direito">
+        <div class="footer-social-media">
             <div class="social-media">
-                <a href="#"><img src="/img/imagens/facebook (2).png" alt="Facebook"></a>
-                <a href="#"><img src="/img/imagens/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="/img/imagens/telegrama.png" alt="Telegram"></a>
-                <a href="#"><img src="/img/imagens/youtube.png" alt="YouTube"></a>
+                <a href="#"><img src="/img/imagens/facebook (2).png"
+                        alt="Facebook"></a>
+                <a href="#"><img src="/img/imagens/instagram.png"
+                        alt="instagram"></a>
+                <a href="#"><img src="/img/imagens/telegrama.png"
+                        alt="telegram"></a>
+                <a href="#"><img src="/img/imagens/youtube.png"
+                        alt="youtube"></a>
             </div>
             <div class="certificacoes">
-                <img src="/img/imagens/Group 1.png" alt="Certificações">
+                <img src="/img/imagens/Group 1.png" alt="certificações">
             </div>
-        </div>
+        </div> 
     </footer>
+
+    <script src="/main/script.js"></script>
 </body>
 </html>

@@ -1,181 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.simulados-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-body {
-  background-image: url(/img/imagens/FUNDO\ LARANJA.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; 
-  min-height: 100vh;
+.simulados-content {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
-header nav {
+.botoes-content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: black;
-  padding: 10px 20px;
-  height: 70px; 
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 
-header .logo {
-  max-height: 100px; 
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 100px;
-  margin: 0;
-  padding: 0;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-nav ul li a {
+.botoes-content button {
+  margin: 1vh;
+  background-color: #FFA500;
   color: white;
-  text-decoration: none;
-  transition: color 0.5s, border-bottom 0.5s;
-}
-
-nav ul li a:hover {
-  color: orange;
-  border-bottom: 2px solid orangered;
-}
-
-.login-btn {
-  background-color: darkblue;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-  font-size: 20px;
+  width: 100%;
+  height: 40px;
   font-weight: bold;
+  border: 0;
   border-radius: 5px;
-  margin-right: 15px;
+  cursor: pointer;
 }
 
-.login-btn:hover {
-  background-color: darkblue;
+.botoes-content button:hover {
+  background-color: #df9100;
   transform: scale(1.1);
 }
 
-main {
-  flex: 1;
-  padding: 20px;
-}
-
-.details-content {
-  display: flex;
-  flex-direction: column;
-  gap: 20px; /* Adiciona espaço entre os detalhes */
-}
-
-details {
-  margin-bottom: 10px;
-  padding: 10px;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-summary {
+.titulo-content {
+  font-family: "Ubuntu Sans", sans-serif;
+  color: white;
   font-weight: bold;
-  cursor: pointer;
+  font-size: 1.4em;
+  font-style: italic;
 }
 
-button {
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #007BFF;
+.descricao-content {
+  font-family: "Ubuntu Sans", sans-serif;
   color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  font-weight: 100;
+  font-size: .6em;
 }
 
-button:hover {
-  background-color: #0056b3;
-}
 
-.mapa_mental {
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 10px 20px;
-}
-
-.mapa_mental a {
-  color: white;
-  text-decoration: none;
-}
-
-/* Estilo para a imagem principal */
-.imagem-principal {
-  width: 40%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-/* Ajustes específicos para o footer */
-footer {
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-footer .logo {
-  height: 100px;
-  width: auto;
-}
-
-.footer-text {
-  text-align: center;
-}
-
-.footer-text p {
-  margin: 5px 0;
-}
-
-.footer .canto-inferior-direito {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.canto-inferior-direito .certificacoes {
-  padding-top: 20px;
-}
-
-.social-media {
-  display: flex;
-  gap: 20px;
-}
-
-.social-media img {
-  height: 40px;
-  width: auto;
+@media (max-width: 768px) {
+  .simulados-container {
+    flex-direction: column;
+  }
 }

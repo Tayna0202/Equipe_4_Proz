@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guru Certificate</title>
     <link rel="icon" href="/img/imagens/LOGO-ICON.png" type="image/png">
+    <link rel="stylesheet" href="/Estilos/header.css">
     <link rel="stylesheet" href="/Estilos/style.css">
+    <link rel="stylesheet" href="/Estilos/footer.css">
 </head>
 <body>
     <header>
-        <nav>
+        <div class="menu-button">
+            <img id="menu-button" src="https://www.clipartmax.com/png/full/77-773806_call-610-465-white-hamburger-menu-icon-png.png">
+        </div>
+        <nav class="menu">
             <a href="/main/index.html"><img src="/img/imagens/logo guru.png" alt="Logo" class="logo"></a>
             <ul class="nav-menu">
                 <li><a href="/main/quemSomos.html">QUEM SOMOS</a></li>
@@ -20,11 +25,8 @@
             <a href="/main/acesso.html">
                 <button class="login-btn">ENTRAR/CADASTRO</button>
             </a>
-            <button class="menu-toggle" aria-label="Abrir menu">
-                <span class="menu-icon"></span>
-            </button>
         </nav>
-        <div class="mobile-menu">
+        <div class="mobile-menu" id="mobile-menu">
             <ul>
                 <li><a href="/main/quemSomos.html">QUEM SOMOS</a></li>
                 <li><a href="/main/simulados.html">SIMULADOS</a></li>
@@ -46,23 +48,30 @@
     </main>
     
     <footer>
-        <img src="/img/imagens/logo guru.png" alt="Logo" class="logo">
+        <div class="footer-logo">
+            <img src="/img/imagens/logo guru.png" alt="Logo" class="logo">
+        </div>
         <div class="footer-text">
             <p>Desbrave o conhecimento. Transforme o futuro</p>
             <p>"Continue estudando e alcance sua certificação AWS! Sucesso nos estudos!"</p><br><br><br>
-            <p>&copy; 2024 Guru Certificate. Todos os direitos reservados.</p>
+            <p>&copy; 2024 Guru Certificate. Todos os direitos
+                reservados.</p>
         </div>
-        <div class="canto-inferior-direito">
+        <div class="footer-social-media">
             <div class="social-media">
-                <a href="#"><img src="/img/imagens/facebook (2).png" alt="Facebook"></a>
-                <a href="#"><img src="/img/imagens/instagram.png" alt="instagram"></a>
-                <a href="#"><img src="/img/imagens/telegrama.png" alt="telegram"></a>
-                <a href="#"><img src="/img/imagens/youtube.png" alt="youtube"></a>
+                <a href="#"><img src="/img/imagens/facebook (2).png"
+                        alt="Facebook"></a>
+                <a href="#"><img src="/img/imagens/instagram.png"
+                        alt="instagram"></a>
+                <a href="#"><img src="/img/imagens/telegrama.png"
+                        alt="telegram"></a>
+                <a href="#"><img src="/img/imagens/youtube.png"
+                        alt="youtube"></a>
             </div>
             <div class="certificacoes">
                 <img src="/img/imagens/Group 1.png" alt="certificações">
             </div>
-        </div>
+        </div> 
     </footer>
 
     <script src="/Estilos/menu.js"></script>

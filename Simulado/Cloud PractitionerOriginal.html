@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário AWS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cloud Practitioner Simulação</h1>
+        <ol start="01">
+            <li>
+                <h2>Pergunta 01</h2>
+                <h2>Qual serviço da AWS oferece suporte a uma arquitetura híbrida que oferece aos usuários a capacidade de estender a infraestrutura da AWS, os serviços da AWS, as APIs e as ferramentas para data centers, ambientes de co-localização ou instalações locais?</h2>
+                <ul>
+                    <li><input type="radio" name="q1" value="AWS Fargate"> AWS Fargate</li>
+                    <li><input type="radio" name="q1" value="Zonas locais da AWS"> Zonas locais da AWS</li>
+                    <li><input type="radio" name="q1" value="Postos avançados da AWS"> Postos avançados da AWS</li>
+                    <li><input type="radio" name="q1" value="AWS Snowmobile"> AWS Snowmobile</li>
+                </ul>
+                <div class="answer" id="answer1"></div>
+            </li>
+            <li>
+                <h2>Pergunta 02</h2>
+                <h2>Qual é o objetivo de ter um gateway de internet dentro de uma VPC?</h2>
+                <ul>
+                    <li><input type="radio" name="q2" value="Para impor restrições de largura de banda ao tráfego da Internet"> Para impor restrições de largura de banda ao tráfego da Internet</li>
+                    <li><input type="radio" name="q2" value="Para balancear a carga do tráfego da Internet em instâncias do Amazon EC2"> Para balancear a carga do tráfego da Internet em instâncias do Amazon EC2</li>
+                    <li><input type="radio" name="q2" value="Para permitir a comunicação entre a VPC e a internet"> Para permitir a comunicação entre a VPC e a internet</li>
+                    <li><input type="radio" name="q2" value="Para criar uma conexão VPN com a VPC"> Para criar uma conexão VPN com a VPC</li>
+                </ul>
+                <div class="answer" id="answer2"></div>
+            </li>
+            <li>
+                <h2>Pergunta 03</h2>
+                <h2>Uma empresa farmacêutica opera sua infraestrutura em uma única região da AWS. A empresa tem milhares de VPCs em várias contas da AWS que deseja interconectar. Qual serviço ou recurso da AWS a empresa deve usar para ajudar a simplificar o gerenciamento e reduzir os custos operacionais?</h2>
+                <ul>
+                    <li><input type="radio" name="q3" value="Para impor restrições de largura de banda ao tráfego da Internet"> Para impor restrições de largura de banda ao tráfego da Internet</li>
+                    <li><input type="radio" name="q3" value="Para balancear a carga do tráfego da Internet em instâncias do Amazon EC2"> Para balancear a carga do tráfego da Internet em instâncias do Amazon EC2</li>
+                    <li><input type="radio" name="q3" value="Para permitir a comunicação entre a VPC e a internet"> Para permitir a comunicação entre a VPC e a internet</li>
+                    <li><input type="radio" name="q3" value="Para criar uma conexão VPN com a VPC"> Para criar uma conexão VPN com a VPC</li>
+                </ul>
+                <div class="answer" id="answer3"></div>
+            </li>
+
+            <li>
+                <h2>Pergunta 04</h2>
+                <h2>Qual opção de recuperação de desastres é a MENOS cara?</h2>
+                <ul>
+                    <li><input type="radio" name="q4" value="Backup and restore"> Backup and restore</li>
+                    <li><input type="radio" name="q4" value="Multisite"> Multisite</li>
+                    <li><input type="radio" name="q4" value="Warm standby"> Warm standby</li>
+                    <li><input type="radio" name="q4" value="Pilot light"> Pilot light</li>
+                </ul>
+                <div class="answer" id="answer4"></div>
+            </li>
+
+
+            <li>
+                <h2>Pergunta 05</h2>
+                <h2>De acordo com o modelo de responsabilidade compartilhada da AWS, qual responsabilidade um cliente tem ao usar o Amazon RDS para hospedar um banco de dados?</h2>
+                <ul>
+                    <li><input type="radio" name="q5" value="Gerenciar conexões com o banco de dados"> Gerenciar conexões com o banco de dados</li>
+                    <li><input type="radio" name="q5" value="Aplicar patches de banco de dados secundários"> Aplicar patches de banco de dados secundários</li>
+                    <li><input type="radio" name="q5" value="Projetar estratégias de criptografia em repouso"> Projetar estratégias de criptografia em repouso</li>
+                    <li><input type="radio" name="q5" value="Instalar o Microsoft SQL Server"> Instalar o Microsoft SQL Server</li>
+                </ul>
+                <div class="answer" id="answer5"></div>
+            </li>
+
+
+            <li>
+                <h2>Pergunta 06</h2>
+                <h2>Qual tipo de armazenamento da AWS é efêmero e é excluído quando uma instância do Amazon EC2 é interrompida ou encerrada?</h2>
+                <ul>
+                    <li><input type="radio" name="q6" value="Armazenamento de instâncias do Amazon EC2"> Armazenamento de instâncias do Amazon EC2</li>
+                    <li><input type="radio" name="q6" value="Amazon S3"> Amazon S3</li>
+                    <li><input type="radio" name="q6" value="Sistema de arquivos elástico da Amazon (Amazon EFS)"> Sistema de arquivos elástico da Amazon (Amazon EFS)</li>
+                    <li><input type="radio" name="q6" value="Loja de blocos elásticos da Amazon (Amazon EBS)"> Loja de blocos elásticos da Amazon (Amazon EBS)</li>
+                </ul>
+                <div class="answer" id="answer6"></div>
+            </li>
+
+
+
+            <li>
+                <h2>Pergunta 07</h2>
+                <h2>Uma empresa deseja usar a Nuvem AWS para fornecer acesso seguro a aplicativos de desktop que estão sendo executados em um ambiente totalmente gerenciado. Qual serviço da AWS a empresa deve usar para atender a esse requisito?</h2>
+                <ul>
+                    <li><input type="radio" name="q7" value="Amazon S3"> Amazon S3</li>
+                    <li><input type="radio" name="q7" value="Amazon AppStream2.0"> Amazon AppStream2.0</li>
+                    <li><input type="radio" name="q7" value="Sincronização de aplicativo da AWS"> Sincronização de aplicativo da AWS</li>
+                    <li><input type="radio" name="q7" value="Escudo AWS (AWS Shield)"> Escudo AWS (AWS Shield)</li>
+                </ul>
+                <div class="answer" id="answer7"></div>
+            </li>
+
+
+
+            <li>
+                <h2>Pergunta 08</h2>
+                <h2>Usar o AWS Config para registrar, auditar e avaliar alterações nos recursos da AWS para permitir a rastreabilidade é um exemplo de qual pilar do AWS Well-Architected Framework?</h2>
+                <ul>
+                    <li><input type="radio" name="q8" value="Segurança"> Segurança</li>
+                    <li><input type="radio" name="q8" value="Eficiência de desempenho"> Eficiência de desempenho</li>
+                    <li><input type="radio" name="q8" value="Otimização de custos"> Otimização de custos</li>
+                    <li><input type="radio" name="q8" value="Excelência operacional"> Excelência operacional</li>
+                </ul>
+                <div class="answer" id="answer8"></div>
+            </li>
+            
+
+            <li>
+                <h2>Pergunta 09</h2>
+                <h2>Uma empresa está operando várias fábricas onde constrói produtos. A empresa precisa da capacidade de processar dados, armazenar dados e executar aplicativos com interdependências de sistema local que exigem baixa latência.
+                Qual serviço da AWS a empresa deve usar para atender a esses requisitos?</h2>
+                <ul>
+                    <li><input type="radio" name="q9" value="Postos avançados da AWS"> Postos avançados da AWS</li>
+                    <li><input type="radio" name="q9" value="AWS IoT Greengrass"> AWS IoT Greengrass</li>
+                    <li><input type="radio" name="q9" value="AWS Lambda"> AWS Lambda</li>
+                    <li><input type="radio" name="q9" value="AWS Snowball Edge"> AWS Snowball Edge</li>
+                </ul>
+                <div class="answer" id="answer9"></div>
+            </li>
+
+            <li>
+                <h2>Pergunta 10</h2>
+                <h2> Qual das opções a seguir é uma característica do usuário raiz da conta da AWS?</h2>
+                <ul>
+                    <li><input type="radio" name="q10" value="O usuário raiz é a primeira identidade de login disponível quando uma conta da AWS é criada."> O usuário raiz é a primeira identidade de login disponível quando uma conta da AWS é criada.</li>
+                    <li><input type="radio" name="q10" value="O usuário root é o único que pode acessar o Console de Gerenciamento da AWS."> O usuário root é o único que pode acessar o Console de Gerenciamento da AWS.</li>
+                    <li><input type="radio" name="q10" value="O usuário root tem uma senha que não pode ser alterada"> O usuário root tem uma senha que não pode ser alterada</li>
+                    <li><input type="radio" name="q10" value="O usuário root é o único usuário que pode ser configurado com autenticação multifator
+                        (MFA)"> O usuário root é o único usuário que pode ser configurado com autenticação multifator
+                        (MFA)</li>
+                </ul>
+                <div class="answer" id="answer9"></div>
+            </li>
+
+
+
+                <li>
+                    <h2>Pergunta 11</h2>
+                    <h2>Que tipo de banco de dados é o Amazon DynamoDB?</h2>
+                    <ul>
+                        <li><input type="radio" name="q11" value="Gráfico"> Gráfico</li>
+                        <li><input type="radio" name="q11" value="Relacional"> Relacional</li>
+                        <li><input type="radio" name="q11" value="Valor-chave"> Valor-chave</li>
+                        <li><input type="radio" name="q11" value="Na memória"> Na memória</li>
+                        </ul>
+                <div class="answer" id="answer11"></div>
+                    </li>
+
+                <li>
+                    <h2>Pergunta 12</h2>
+                    <h2>Uma empresa quer eliminar a necessidade de adivinhar a capacidade da infraestrutura antes das implantações. A empresa também quer gastar seu orçamento em recursos de nuvem apenas à medida que a empresa usa os recursos.</h2>
+                    <ul>
+                        <li><input type="radio" name="q12" value="Preços pré-pagos"> Preços pré-pagos</li>
+                        <li><input type="radio" name="q12" value="Economias de escala"> Economias de escala</li>
+                        <li><input type="radio" name="q12" value="Confiabilidade"> Confiabilidade</li>
+                        <li><input type="radio" name="q12" value="Alcance global"> Alcance global</li>
+                        </ul>
+                    <div class="answer" id="answer12"></div>
+                    </li>
+
+                <li>
+                    <h2>Pergunta 13</h2>
+                    <h2>Uma empresa está planejando executar um aplicativo de marketing global na Nuvem AWS. O aplicativo contará com vídeos que poderão ser visualizados pelos usuários. A empresa deve garantir que todos os usuários possam visualizar esses vídeos com baixa latência.</h2>
+                    <ul>
+                        <li><input type="radio" name="q13" value="Amazon CloudFront"> Amazon CloudFront</li>
+                        <li><input type="radio" name="q13" value="Dimensionamento automático da AWS"> Dimensionamento automático da AWS</li>
+                        <li><input type="radio" name="q13" value="Fluxos de vídeo do Amazon Kinesis (Amazon Kinesis Video Streams)"> Fluxos de vídeo do Amazon Kinesis (Amazon Kinesis Video Streams)</li>
+                        <li><input type="radio" name="q13" value="Balanceamento de carga elástico"> Balanceamento de carga elástico</li>
+                        </ul>
+                    <div class="answer" id="answer13"></div>
+                    </li>
+
+                    <li>
+                    <h2>Pergunta 14</h2>
+                    <h2>Qual serviço da AWS ajudará a proteger os aplicativos executados na AWS contra ataques DDoS?</h2>
+                        <ul>
+                        <li><input type="radio" name="q14" value="Escudo AWS (AWS SHIELD)"> Escudo AWS (AWS SHIELD)</li>
+                        <li><input type="radio" name="q14" value="Guarda da Amazon"> Guarda da Amazon</li>
+                        <li><input type="radio" name="q14" value="AWS WAF"> AWS WAF</li>
+                        <li><input type="radio" name="q14" value="Inspetor da Amazon"> Inspetor da Amazon</li>
+                    </ul>
+                    <div class="answer" id="answer14"></div>
+                    </li>
+
+
+                    <li>
+                    <h2>Pergunta 15</h2>
+                    <h2>Uma empresa deseja migrar seus aplicativos de seu data center local para uma VPC na Nuvem AWS. Esses aplicativos precisarão acessar recursos locais.</h2>
+                    <p>Quais ações atenderão a esses requisitos? (Escolha dois.)</p>
+                        <ul>
+                        <li><input type="checkbox" name="q15a" value="a"> Configure uma conexão do AWS Direct Connect entre o data center local e a AWS.</li>
+                        <li><input type="checkbox" name="q15b" value="b"> Crie uma conexão VPN entre um dispositivo local e um gateway privado virtual na VPC.</li>
+                        <li><input type="checkbox" name="q15c" value="c"> Use o AWS Service Catalog para identificar uma lista de recursos locais que podem ser migrados.</li>
+                        <li><input type="checkbox" name="q15d" value="d"> Use o Amazon CloudFront para restringir o acesso ao conteúdo estático da Web fornecido por meio dos servidores Web locais.</li>
+                        <li><input type="checkbox" name="q15e" value="e"> Use uma distribuição do Amazon CloudFront e configure-a para acelerar a entrega de conteúdo perto dos recursos locais.</li>
+                    </ul>
+                    <div class="answer" id="answer15"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 16</h2>
+                        <h2>Uma empresa tem uma biblioteca de fitas físicas para armazenar backups de dados. A biblioteca de fitas está ficando sem espaço. A empresa precisa estender a capacidade da biblioteca de fitas para a Nuvem AWS.
+
+                        Qual serviço da AWS a empresa deve usar para atender a esse requisito?</h2>
+                        <ul>
+                            <li><input type="radio" name="q16" value="AWS Storage Gateway"> AWS Storage Gateway</li>
+                            <li><input type="radio" name="q16" value="Amazon Elastic Block Store (Amazon EBS)"> Amazon Elastic Block Store (Amazon EBS)</li>
+                            <li><input type="radio" name="q16" value="Amazon S3"> Amazon S3</li>
+                            <li><input type="radio" name="q16" value="Amazon Elastic File System (Amazon EFS)"> Amazon Elastic File System (Amazon EFS)</li>
+                        </ul>
+                        <div class="answer" id="answer16"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 17</h2>
+                        <h2>Uma empresa que tem várias unidades de negócios deseja gerenciar e governar centralmente seus ambientes da Nuvem AWS. A empresa quer automatizar a criação de contas da AWS, aplicar políticas de controle de serviço (SCPs) e simplificar os processos de faturamento. Qual serviço ou ferramenta da AWS a empresa deve usar para atender a esses requisitos?</h2>
+                        <ul>
+                            <li><input type="radio" name="q17" value="AWS Budgets"> AWS Budgets</li>
+                            <li><input type="radio" name="q17" value="AWS Organizations"> AWS Organizations</li>
+                            <li><input type="radio" name="q17" value="AWS Trusted Advisor"> AWS Trusted Advisor</li>
+                            <li><input type="radio" name="q17" value="Cost Explorer"> Cost Explorer</li>
+                        </ul>
+                        <div class="answer" id="answer17"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 18</h2>
+                        <h2>Quais controles de TI a AWS e o cliente compartilham, de acordo com o modelo de responsabilidade compartilhada da AWS? (Escolha dois.)</h2>
+                        <ul>
+                            <li><input type="checkbox" name="q18a" value="a"Criptografia de dados do aplicativo> Criptografia de dados do aplicativo</li>
+                            <li><input type="checkbox" name="q18b" value="b"Reconhecimento e treinamento em nuvem> Reconhecimento e treinamento em nuvem</li>
+                            <li><input type="checkbox" name="q18c" value="c"Segurança de zona> Segurança de zona</li>
+                            <li><input type="checkbox" name="q18d" value="d"Gerenciamento de patches> Gerenciamento de patches</li>
+                            <li><input type="checkbox" name="q18e" value="e"Controles físicos e ambientais> Controles físicos e ambientais</li>
+                        </ul>
+                        <div class="answer" id="answer18"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 19</h2>
+                        <h2>Uma empresa precisa identificar a última vez que um usuário específico acessou o Console de Gerenciamento da AWS.
+                            Qual serviço da AWS fornecerá essas informações?</h2>
+                        <ul>
+                            <li><input type="radio" name="q19" value="Amazon Cognito"> Amazon Cognito</li>
+                            <li><input type="radio" name="q19" value="Amazon GuardDuty"> Amazon GuardDuty</li>
+                            <li><input type="radio" name="q19" value="AWS CloudTrail"> AWS CloudTrail</li>
+                            <li><input type="radio" name="q19" value="Amazon Inspector"> Amazon Inspector</li>
+                        </ul>
+                        <div class="answer" id="answer19"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 20</h2>
+                        <h2>Qual serviço da AWS é usado para fornecer criptografia para o Amazon EBS?</h2>
+                        <ul>
+                            <li><input type="radio" name="q20" value="AWS KMS"> AWS KMS</li>
+                            <li><input type="radio" name="q20" value="Gerenciador de sistemas da AWS"> Gerenciador de sistemas da AWS</li>
+                            <li><input type="radio" name="q20" value="Configuração da AWS"> Configuração da AWS</li>
+                            <li><input type="radio" name="q20" value="Gerenciador de certificados da AWS"> Gerenciador de certificados da AWS</li>
+                        </ul>
+                        <div class="answer" id="answer20"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 21</h2>
+                        <h2>Qual é a diferença entre o modelo de definição de preço da Nuvem AWS e o modelo tradicional de definição de preço de armazenamento local?</h2>
+                        <ul>
+                            <li><input type="radio" name="q21" value="Os recursos da AWS não incorrem em custos"> Os recursos da AWS não incorrem em custos</li>
+                            <li><input type="radio" name="q21" value="Não há custos operacionais de infraestrutura"> Não há custos operacionais de infraestrutura</li>
+                            <li><input type="radio" name="q21" value="Não há custos de licenciamento de software"> Não há custos de licenciamento de software</li>
+                            <li><input type="radio" name="q21" value="Não há compromissos de custos iniciais"> Não há compromissos de custos iniciais</li>
+                        </ul>
+                        <div class="answer" id="answer21"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 22</h2>
+                        <h2>Uma empresa está migrando para o Amazon S3. A empresa precisa transferir 60 TB de dados de um data center local para a AWS em até 10 dias.
+
+
+
+                            Qual serviço da AWS a empresa deve usar para realizar essa migração?</h2>
+                        <ul>
+                            <li><input type="radio" name="q22" value="Amazon S3 Glacier"> Amazon S3 Glacier</li>
+                            <li><input type="radio" name="q22" value="AWS Snowball"> AWS Snowball</li>
+                            <li><input type="radio" name="q22" value="AWS Database Migration Service (AWS DMS)"> AWS Database Migration Service (AWS DMS)</li>
+                            <li><input type="radio" name="q22" value="AWS Direct Connect"> AWS Direct Connect</li>
+                        </ul>
+                        <div class="answer" id="answer22"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 23</h2>
+                        <h2>Em quais situações uma empresa deve criar um usuário do IAM em vez de uma função do IAM? (Escolha dois.)</h2>
+                        <ul>
+                            <li><input type="checkbox" name="q23a" value="a"Quando a empresa cria credenciais de acesso da AWS para indivíduos> Quando a empresa cria credenciais de acesso da AWS para indivíduos</li>
+                            <li><input type="checkbox" name="q23b" value="b"Quando a empresa cria um aplicativo executado em um celular que faz solicitações à AWS> Quando a empresa cria um aplicativo executado em um celular que faz solicitações à AWS</li>
+                            <li><input type="checkbox" name="q23c" value="c"Quando a empresa precisa adicionar usuários a grupos do IAM> Quando a empresa precisa adicionar usuários a grupos do IAM</li>
+                            <li><input type="checkbox" name="q23d" value="d"Quando um aplicativo executado em instâncias do Amazon EC2 requer acesso a outros serviços da AWS"> Quando um aplicativo executado em instâncias do Amazon EC2 requer acesso a outros serviços da AWS</li>
+                            <li><input type="checkbox" name="q23e" value="e"Quando os usuários são autenticados na rede corporativa e desejam usar a AWS sem precisar fazer login uma segunda vez"> Quando os usuários são autenticados na rede corporativa e desejam usar a AWS sem precisar fazer login uma segunda vez</li>
+                        </ul>
+                        <div class="answer" id="answer23"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 24</h2>
+                        <h2>Uma empresa está planejando uma implantação de infraestrutura na Nuvem AWS. Antes da implantação, a empresa quer uma estimativa de custo para executar a infraestrutura.
+                            Qual serviço ou recurso da AWS pode fornecer essas informações?</h2>
+                        <ul>
+                            <li><input type="radio" name="q24" value="Relatório de custo e uso da AWS"> Relatório de custo e uso da AWS</li>
+                            <li><input type="radio" name="q24" value="Explorador de Custos"> Explorador de Custos</li>
+                            <li><input type="radio" name="q24" value="Consultor confiável da AWS"> Consultor confiável da AWS</li>
+                            <li><input type="radio" name="q24" value="Calculadora de definição de preço da AWS"> Calculadora de definição de preço da AWS</li>
+                        </ul>
+                        <div class="answer" id="answer24"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 25</h2>
+                       <h2>Quais serviços da AWS uma empresa deve usar para ler e gravar dados que mudam com frequência? (Escolha dois.)</h2>
+                        <ul>
+                            <li><input type="checkbox" name="q25a" value="a"Amazon Elastic File System (Amazon EFS)> Amazon Elastic File System (Amazon EFS)</li>
+                            <li><input type="checkbox" name="q25b" value="b"Amazon Redshift> Amazon Redshift</li>
+                            <li><input type="checkbox" name="q25c" value="c"Amazon S3 Glacier> Amazon S3 Glacier</li>
+                            <li><input type="checkbox" name="q25d" value="d"Amazon RDS> Amazon RDS</li>
+                            <li><input type="checkbox" name="q25e" value="e"AWS Snowball> AWS Snowball</li>
+                        </ul>
+                        <div class="answer" id="answer25"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 26</h2>
+                        <h2>Uma empresa está projetando suas cargas de trabalho da AWS para que os componentes possam ser atualizados regularmente e para que as alterações possam ser feitas em pequenos incrementos reversíveis.
+                            Qual pilar do AWS Well-Architected Framework é compatível com esse projeto?</h2>
+                        <ul>
+                            <li><input type="radio" name="q26" value="Eficiência de desempenho"> Eficiência de desempenho</li>
+                            <li><input type="radio" name="q26" value="Fiabilidade"> Fiabilidade</li>
+                            <li><input type="radio" name="q26" value="Excelência operacional"> Excelência operacional</li>
+                            <li><input type="radio" name="q26" value="Segurança"> Segurança</li>
+                        </ul>
+                        <div class="answer" id="answer26"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 27</h2>
+                        <h2>Uma empresa deseja implementar a detecção de ameaças em sua infraestrutura da AWS. No entanto, a empresa não quer implantar software adicional.
+                            Qual serviço da AWS a empresa deve usar para atender a esses requisitos?</h2>
+                        <ul>
+                            <li><input type="radio" name="q27" value="Amazon VPC"> Amazon VPC</li>
+                            <li><input type="radio" name="q27" value="Amazon GuardDuty"> Amazon GuardDuty</li>
+                            <li><input type="radio" name="q27" value="AWS CloudTrail"> AWS CloudTrail</li>
+                            <li><input type="radio" name="q27" value="AWS Config"> AWS Config</li>
+                        </ul>
+                        <div class="answer" id="answer27"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 28</h2>
+                        <h2>Um usuário precisa determinar se os security groups de uma instância do Amazon EC2 foram modificados no último mês. Como o usuário pode ver se uma alteração foi feita?</h2>
+                        <ul>
+                            <li><input type="radio" name="q28" value="Use o Amazon EC2 para ver se o security group foi alterado."> Use o Amazon EC2 para ver se o security group foi alterado.</li>
+                            <li><input type="radio" name="q28" value="Use o AWS CloudTrail para ver se o security group foi alterado."> Use o AWS CloudTrail para ver se o security group foi alterado.</li>
+                            <li><input type="radio" name="q28" value="AUse o Amazon EC2 para ver se o security group foi alterado."> Use o Amazon EC2 para ver se o security group foi alterado.</li>
+                            <li><input type="radio" name="q28" value="Use o AWS CloudWatch para ver se o security group foi alterado."> Use o AWS CloudWatch     para ver se o security group foi alterado.</li>
+                        </ul>
+                        <div class="answer" id="answer28"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 29</h2>
+                        <h2>Qual ferramenta ou recurso da AWS atua como um firewall de VPC no nível da sub-rede?</h2>
+                        <ul>
+                            <li><input type="radio" name="q29" value="Gateway da Internet"> Gateway da Internet</li>
+                            <li><input type="radio" name="q29" value="ACL de rede"> ACL de rede</li>
+                            <li><input type="radio" name="q29" value="Espelhamento de tráfego"> Espelhamento de tráfego</li>
+                            <li><input type="radio" name="q29" value="Grupo de segurança"> Grupo de segurança</li>
+                        </ul>
+                        <div class="answer" id="answer29"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 30</h2>
+                       <h2>Qual serviço ou recurso da AWS verifica as políticas de acesso e oferece recomendações acionáveis para ajudar os usuários a definir políticas seguras e funcionais?</h2>
+                        <ul>
+                            <li><input type="radio" name="q30" value="AWS Systems Manager"> AWS Systems Manager</li>
+                            <li><input type="radio" name="q30" value="AWS Trusted Advisor"> AWS Trusted Advisor</li>
+                            <li><input type="radio" name="q30" value="AWS IAM Access Analyzer"> AWS IAM Access Analyzer</li>
+                            <li><input type="radio" name="q30" value="AWS Shield"> AWS Shield</li>
+                        </ul>
+                        <div class="answer" id="answer30"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 31</h2>
+                        <h2>Qual serviço da AWS usa pontos de presença?</h2>
+                        <ul>
+                            <li><input type="radio" name="q31" value="AWS EKS"> AWS EKS</li>
+                            <li><input type="radio" name="q31" value="AWS ELB"> AWS ELB</li>
+                            <li><input type="radio" name="q31" value="AWS Global Accelerator"> AWS Global Accelerator</li>
+                            <li><input type="radio" name="q31" value="Amazon Aurora"> Amazon Aurora</li>
+                        </ul>
+                        <div class="answer" id="answer31"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 32</h2>
+                        <h2>Qual serviço ou ferramenta da AWS pode ser usado para capturar informações sobre tráfego de entrada e saída em uma Amazon VPC?</h2>
+                        <ul>
+                            <li><input type="radio" name="q32" value="Amazon Inspector"> Amazon Inspector</li>
+                            <li><input type="radio" name="q32" value="NAT gateway"> NAT gateway</li>
+                            <li><input type="radio" name="q32" value="VPC endpoint services"> VPC endpoint services</li>
+                            <li><input type="radio" name="q32" value="VPC Flow Logs"> VPC Flow Logs</li>
+                        </ul>
+                        <div class="answer" id="answer32"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 33</h2>
+                        <h2>Quais serviços da AWS usam pontos de presença globais? (Escolha dois.)</h2>
+                        <ul>
+                            <li><input type="checkbox" name="q33a" value="a"Amazon CloudFront> Amazon CloudFront</li>
+                            <li><input type="checkbox" name="q33b" value="b"Acelerador global da AWS> Acelerador global da AWS</li>
+                            <li><input type="checkbox" name="q33c" value="c"AWS Fargate> AWS Fargate</li>
+                            <li><input type="checkbox" name="q33d" value="d"Amazon VPC> Amazon VPC</li>
+                            <li><input type="checkbox" name="q33e" value="e"Comprimento de onda da AWS> Comprimento de onda da AWS</li>
+                        </ul>
+                        <div class="answer" id="answer33"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 34</h2>
+                        <h2>Qual ferramenta de serviço da AWS ajuda a gerenciar centralmente o faturamento e permitir acesso controlado a recursos em contas da AWS?</h2>
+                        <ul>
+                            <li><input type="radio" name="q34" value="Explorador de Custos"> Explorador de Custos</li>
+                            <li><input type="radio" name="q34" value="Calculadora de preços AWS"> Calculadora de preços AWS</li>
+                            <li><input type="radio" name="q34" value="Organizações da AWS"> Organizações da AWS</li>
+                            <li><input type="radio" name="q34" value="Gerenciamento de identidade e acesso da AWS (IAM)"> Gerenciamento de identidade e acesso da AWS (IAM)</li>
+                        </ul>
+                        <div class="answer" id="answer34"></div>
+                    </li>
+                    <li>
+                        <h2>Pergunta 35</h2>
+                        <h2>Quais são algumas vantagens de usar instâncias do Amazon EC2 para hospedar aplicativos na Nuvem AWS em vez de no local? (Escolha dois.)</h2>
+                        <ul>
+                            <li><input type="checkbox" name="q35a" value="a"EC2 inclui o gerenciamento de patches do sistema operacional> AWS O EC2 inclui o gerenciamento de patches do sistema operacional</li>
+                            <li><input type="checkbox" name="q35b" value="b"EC2 se integra à Amazon VPC, ao AWS CloudTrail e ao AWS Identity and Access Management (IAM).> O EC2 se integra à Amazon VPC, ao AWS CloudTrail e ao AWS Identity and Access Management (IAM).</li>
+                            <li><input type="checkbox" name="q35c" value="c"EC2 tem otimização automática de custos de armazenamento.> O EC2 tem otimização automática de custos de armazenamento.</li>
+                            <li><input type="checkbox" name="q35d" value="d"EC2 tem um acordo de nível de serviço (SLA) de 100%.> O EC2 tem um acordo de nível de serviço (SLA) de 100%.</li>
+                            <li><input type="checkbox" name="q35e" value="e"EC2 tem um modelo de precificação flexível e pré-pago.> O EC2 tem um modelo de precificação flexível e pré-pago..</li>
+                        </ul>
+                        <div class="answer" id="answer35"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 36</h2>
+                        <h2>Uma empresa quer garantir que duas instâncias do Amazon EC2 estejam em data centers separados com latência mínima de comunicação entre os data centers.
+                            Como a empresa pode atender a esse requisito?</h2>
+                        <ul>
+                            <li><input type="radio" name="q36" value="Coloque as instâncias do EC2 em duas regiões da AWS separadas conectadas com uma conexão de emparelhamento de VPC."> Coloque as instâncias do EC2 em duas regiões da AWS separadas conectadas com uma conexão de emparelhamento de VPC.</li>
+                            <li><input type="radio" name="q36" value="Coloque uma instância do EC2 no local e a outra em uma região da AWS. Em seguida, conecte-os usando uma conexão VPN da AWS"> Coloque uma instância do EC2 no local e a outra em uma região da AWS. Em seguida, conecte-os usando uma conexão VPN da AWS</li>
+                            <li><input type="radio" name="q36" value="Coloque as instâncias do EC2 em duas zonas de disponibilidade separadas na mesma região da AWS."> Coloque as instâncias do EC2 em duas zonas de disponibilidade separadas na mesma região da AWS.</li>
+                            <li><input type="radio" name="q36" value="Coloque ambas as instâncias do EC2 em um grupo de posicionamento para largura de banda dedicada."> Coloque ambas as instâncias do EC2 em um grupo de posicionamento para largura de banda dedicada.</li>
+                        </ul>
+                        <div class="answer" id="answer36"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 37</h2>
+                        <h2>Uma empresa deseja realizar análise de sentimento nas mensagens de e-mail de atendimento ao cliente que recebe. A empresa quer identificar se o engajamento no atendimento ao cliente foi positivo ou negativo.
+                        Qual serviço da AWS a empresa deve usar para realizar essa análise?</h2>
+                        <ul>
+                            <li><input type="radio" name="q37" value="Amazon Comprehend"> Amazon Comprehend</li>
+                            <li><input type="radio" name="q37" value="Amazon Textract"> Amazon Textract</li>
+                            <li><input type="radio" name="q37" value="Amazon Rekognition"> Amazon Rekognition</li>
+                            <li><input type="radio" name="q37" value="AWS Amazon Translate"> AWS Amazon Translate</li>
+                        </ul>
+                        <div class="answer" id="answer37"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 38</h2>
+                        <h2>Uma grande empresa tem vários departamentos. Cada departamento tem sua própria conta da AWS. Cada departamento comprou instâncias reservadas do Amazon EC2. Alguns departamentos não usam todas as Instâncias Reservadas que compraram, e outros departamentos precisam de mais Instâncias Reservadas do que compraram. A empresa precisa gerenciar as contas da AWS para todos os departamentos para que os departamentos possam compartilhar as instâncias reservadas. Qual serviço ou ferramenta da AWS a empresa deve usar para atender a esses requisitos?</h2>
+                        <ul>
+                            <li><input type="radio" name="q38" value="AWS Organizations"> AWS Organizations</li>
+                            <li><input type="radio" name="q38" value="AWS Trusted Advisor"> AWS Trusted Advisor</li>
+                            <li><input type="radio" name="q38" value="AWS Systems Manager"> AWS Systems Manager</li>
+                            <li><input type="radio" name="q38" value="Cost Explorer"> Cost Explorer</li>
+                        </ul>
+                        <div class="answer" id="answer38"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 39</h2>
+                        <h2>Qual serviço da AWS pode ser usado para transformar texto em fala realista?</h2>
+                        <ul>
+                            <li><input type="radio" name="q39" value="Amazon Kendra"> Amazon Kendra</li>
+                            <li><input type="radio" name="q39" value="Amazon Connect"> Amazon Connect</li>
+                            <li><input type="radio" name="q39" value="Amazon Rekognition"> Amazon Rekognition</li>
+                            <li><input type="radio" name="q39" value="Amazon Polly"> Amazon Polly</li>
+                        </ul>
+                        <div class="answer" id="answer39"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 40</h2>
+                        <h2>Qual dos itens a seguir atua como um firewall em nível de instância para controlar o acesso de entrada e saída?</h2>
+                        <ul>
+                            <li><input type="radio" name="q40" value="Consultor confiável da AWS"> Consultor confiável da AWS</li>
+                            <li><input type="radio" name="q40" value="Lista de controle de acesso à rede"> Lista de controle de acesso à rede</li>
+                            <li><input type="radio" name="q40" value="Gateways privados virtuais"> Gateways privados virtuais</li>
+                            <li><input type="radio" name="q40" value="Grupos de segurança"> Grupos de segurança</li>
+                        </ul>
+                        <div class="answer" id="answer40"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 41</h2>
+                        <h2>Uma empresa de manufatura tem um aplicativo crítico que é executado em um local remoto que tem uma conexão lenta com a Internet. A empresa quer migrar a carga de trabalho para a AWS. O aplicativo é sensível à latência e interrupções na conectividade. A empresa quer uma solução que possa hospedar esse aplicativo com latência mínima.
+                            Qual serviço ou recurso da AWS a empresa deve usar para atender a esses requisitos?</h2>
+                        <ul>
+                            <li><input type="radio" name="q41" value="Zonas de disponibilidade"> AWS Zonas de disponibilidade</li>
+                            <li><input type="radio" name="q41" value="Postos avançados da AWS"> AWS Postos avançados da AWS</li>
+                            <li><input type="radio" name="q41" value="Zonas locais da AWS"> Zonas locais da AWS</li>
+                            <li><input type="radio" name="q41" value="AWS wavelength"> AWS wavelength</li>
+                        </ul>
+                        <div class="answer" id="answer41"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 42</h2>
+                        <h2>Qual serviço da AWS pode ser usado para separar aplicativos?</h2>
+                        <ul>
+                            <li><input type="radio" name="q42" value="Configuração da AWS"> Configuração da AWS</li>
+                            <li><input type="radio" name="q42" value="AWS Config"> Amazon Simple Email Service (Amazon SES)</li>
+                            <li><input type="radio" name="q42" value="Amazon Simple Queue Service (Amazon SQS)"> Amazon Simple Queue Service (Amazon SQS)</li>
+                            <li><input type="radio" name="q42" value="Lote da AWS"> Lote da AWS</li>
+                        </ul>
+                        <div class="answer" id="answer42"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 43</h2>
+                        <h2>Uma empresa precisa estabelecer uma conexão entre duas VPCs. As VPCs estão localizadas em duas regiões diferentes da AWS. A empresa quer usar a infraestrutura existente das VPCs para essa conexão. Qual serviço ou recurso da AWS pode ser usado para estabelecer essa conexão?</h2>
+                        <ul>
+                            <li><input type="radio" name="q43" value="VPC endpoints"> VPC endpoints</li>
+                            <li><input type="radio" name="q43" value="VPC peering"> VPC peering</li>
+                            <li><input type="radio" name="q43" value="AWS Client VPN"> AWS Client VPN</li>
+                            <li><input type="radio" name="q43" value="AWS Direct Connect"> AWS Direct Connect</li>
+                        </ul>
+                        <div class="answer" id="answer43"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 44</h2>
+                       <h2>Qual serviço da AWS ajuda a proteger contra ataques DDoS?</h2>
+                        <ul>
+                            <li><input type="radio" name="q44" value="Amazon GuardDuty"> Amazon GuardDuty</li>
+                            <li><input type="radio" name="q44" value="Amazon Detective"> Amazon Detective</li>
+                            <li><input type="radio" name="q44" value="AWS Shield"> AWS Shield</li>
+                            <li><input type="radio" name="q44" value="AWS Fargate"> AWS Fargate</li>
+                        </ul>
+                        <div class="answer" id="answer44"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 45</h2>
+                        <h2>Uma empresa de varejo on-line tem picos sazonais de vendas várias vezes ao ano, principalmente em torno de feriados. A demanda é menor em outros momentos. A empresa tem dificuldade em prever o aumento da demanda de infraestrutura para cada estação.
+                        Quais vantagens de migrar para a Nuvem AWS MAIS beneficiaria a empresa? (Escolha dois.)</h2>
+                        <ul>
+                            <li><input type="checkbox" name="q45a" value="a"Cotas de serviço da AWS> Cotas de serviço da AWS</li>
+                            <li><input type="checkbox" name="q45b" value="b"Preços pré-pagos> Preços pré-pagos</li>
+                            <li><input type="checkbox" name="q45c" value="c"Modelo de responsabilidade compartilhada da AWS> Modelo de responsabilidade compartilhada da AWS</li>
+                            <li><input type="checkbox" name="q45d" value="d"Elasticidade> Elasticidade</li>
+                            <li><input type="checkbox" name="q45e" value="e"Presença global> Presença global</li>
+                        </ul>
+                        <div class="answer" id="answer45"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 46</h2>
+                        <h2>Qual serviço da AWS permite que os usuários façam download de relatórios de segurança e conformidade sobre a infraestrutura da AWS sob demanda?</h2>
+                        <ul>
+                            <li><input type="radio" name="q46" value="AWS Artifact"> AWS Artifact</li>
+                            <li><input type="radio" name="q46" value="AWS Security Hub"> AWS Security Hub</li>
+                            <li><input type="radio" name="q46" value="Amazon GuardDuty"> Amazon GuardDuty</li>
+                            <li><input type="radio" name="q46" value="AWS Shield"> AWS Shield</li>
+                        </ul>
+                        <div class="answer" id="answer46"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 47</h2>
+                        <h2>Quais dos itens a seguir são componentes de uma conexão VPN site a site da AWS? (Escolha dois.)</h2>
+                        <ul>
+                            <li><input type="checkbox" name="q47a" value="a"AWS Lamba> AWS Lamba</li>
+                            <li><input type="checkbox" name="q47b" value="b"AWS AWS Policy> AWS Policy</li>
+                            <li><input type="checkbox" name="q47c" value="c"Gateway da Internet> Gateway da Internet</li>
+                            <li><input type="checkbox" name="q47d" value="d"AWS S3> AWS S3</li>
+                            <li><input type="checkbox" name="q47e" value="e"AWS Storage Gateway> AAWS Storage Gateway</li>
+                        </ul>
+                        <div class="answer" id="answer47"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 48</h2>
+                        <h2>Qual é o escopo de uma VPC dentro da rede da AWS?</h2>
+                        <ul>
+                            <li><input type="radio" name="q48" value="Uma VPC pode abranger todas as zonas de disponibilidade em uma região da AWS."> Uma VPC pode abranger todas as zonas de disponibilidade em uma região da AWS.</li>
+                            <li><input type="radio" name="q48" value="Uma VPC deve abranger pelo menos dois pontos de presença em cada região da AWS."> Uma VPC deve abranger pelo menos dois pontos de presença em cada região da AWS.</li>
+                            <li><input type="radio" name="q48" value="AWS Uma VPC deve abranger pelo menos duas sub-redes em cada região da AWS."> Uma VPC deve abranger pelo menos duas sub-redes em cada região da AWS.</li>
+                            <li><input type="radio" name="q48" value="Uma VPC pode abranger todas as zonas de disponibilidade globalmente."> Uma VPC pode abranger todas as zonas de disponibilidade globalmente.</li>
+                        </ul>
+                        <div class="answer" id="answer48"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 49</h2>
+                        <h2>Qual serviço ou recurso da AWS atua como um firewall para instâncias do Amazon EC2?</h2>
+                        <ul>
+                            <li><input type="radio" name="q49" value="Interface de rede elástica"> Interface de rede elástica</li>
+                            <li><input type="radio" name="q49" value="Amazon VPC"> Amazon VPC</li>
+                            <li><input type="radio" name="q49" value="Grupo de segurança"> Grupo de segurança</li>
+                            <li><input type="radio" name="q49" value="Amazon CloudFront"> Amazon CloudFront</li>
+                        </ul>
+                        <div class="answer" id="answer49"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 50</h2>
+                       <h2>Uma empresa precisa processar simultaneamente centenas de solicitações de diferentes usuários. Qual combinação de serviços da AWS a empresa deve usar para criar uma solução operacionalmente eficiente?
+                      </h2>
+                        <ul>
+                            <li><input type="radio" name="q50" value="Amazon Simple Queue Service (Amazon SQS) e AWS Lambda"> Amazon Simple Queue Service (Amazon SQS) e AWS Lambda</li>
+                            <li><input type="radio" name="q50" value="AWS Amplify e AWS AppSync"> AWS Amplify e AWS AppSync</li>
+                            <li><input type="radio" name="q50" value="Amazon Kinesis e Amazon Athena"> Amazon Kinesis e Amazon Athena</li>
+                            <li><input type="radio" name="q50" value="AWS Data Pipeline e Amazon EC2"> AWS Data Pipeline e Amazon EC2</li>
+                        </ul>
+                        <div class="answer" id="answer50"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 51</h2>
+                        <h2>Uma empresa lançou uma instância do Amazon EC2 com a mais recente Amazon Linux 2 Amazon Machine Image (AMI).
+                            Quais ações um administrador de sistema pode tomar para se conectar à instância do EC2? (Escolha dois.)</h2>
+                        <ul>
+                            <li><input type="checkbox" name="q51a" value="a"Use uma conexão RDP (Remote Desktop Protocol)> Use uma conexão RDP (Remote Desktop Protocol)</li>
+                            <li><input type="checkbox" name="q51b" value="b"Use o Gerenciador de sessões do AWS Systems Manager.> Use o Gerenciador de sessões do AWS Systems Manager.</li>
+                            <li><input type="checkbox" name="q51c" value="c"Use Amazon EC2 Instance Connect.> Use Amazon EC2 Instance Connect.</li>
+                            <li><input type="checkbox" name="q51d" value="d"Usar o Amazon Connect> Usar o Amazon Connect</li>
+                            <li><input type="checkbox" name="q51e" value="e"Usar o AWS Batch> Usar o AWS Batch</li>
+                        </ul>
+                        <div class="answer" id="answer51"></div>
+                    </li>
+                    <li>
+                        <h2>Pergunta 52</h2>
+                       <h2>Uma empresa executa suas cargas de trabalho no local. A empresa quer prever o custo de execução de um grande aplicativo na AWS.
+                        Qual serviço ou ferramenta da AWS a empresa pode usar para obter essas informações?</h2>
+                        <ul>
+                            <li><input type="radio" name="q52" value="AWS Budgets"> AWS Budgets</li>
+                            <li><input type="radio" name="q52" value="AWS Trusted Advisor"> AWS Trusted Advisor</li>
+                            <li><input type="radio" name="q52" value="Cost Explorer"> Cost Explorer</li>
+                            <li><input type="radio" name="q52" value="AWS Pricing Calculator"> AWS Pricing Calculator</li>
+                        </ul>
+                        <div class="answer" id="answer52"></div>
+                    </li>
+                    <li>
+                        <h2>Pergunta 53</h2>
+                        <h2>Qual componente da infraestrutura global da AWS é composto por um ou mais data centers discretos com energia, rede e conectividade redundantes?</h2>
+                        <ul>
+                            <li><input type="radio" name="q53" value="Availability Zone"> Availability Zone</li>
+                            <li><input type="radio" name="q53" value="AWS Region"> AWS Region</li>
+                            <li><input type="radio" name="q53" value="Edge location"> Edge location</li>
+                            <li><input type="radio" name="q53" value="AWS Outposts"> AWS Outposts</li>
+                        </ul>
+                        <div class="answer" id="answer53"></div>
+                    </li>
+                    <li>
+                    <h2>Pergunta 54</h2>
+                       <h2>Quais dos seguintes recursos são recursos da Amazon Virtual Private Cloud (Amazon VPC)?</h2>
+                        <ul>
+                            <li><input type="radio" name="q54" value="Objetos; listas de controle de acesso (ACLs)"> Objetos; listas de controle de acesso (ACLs)</li>
+                            <li><input type="radio" name="q54" value="Grupos; Papéis"> Grupos; Papéis</li>
+                            <li><input type="radio" name="q54" value="Políticas de acesso; Baldes"> Políticas de acesso; Baldes</li>
+                            <li><input type="radio" name="q54" value="Sub-redes; Gateways de Internet"> Sub-redes; Gateways de Internet</li>
+                        </ul>
+                        <div class="answer" id="answer54"></div>
+                    </li>
+                    <li>
+                        <h2>Pergunta 55</h2>
+                       <h2>Uma empresa está lançando um aplicativo na Nuvem AWS. O aplicativo usará o armazenamento do Amazon S3. Uma grande equipe de pesquisadores terá acesso compartilhado aos dados. A empresa deve ser capaz de recuperar dados que são acidentalmente substituídos ou excluídos.
+                        Qual recurso do S3 a empresa deve ativar para atender a esse requisito?</h2>
+                        <ul>
+                            <li><input type="radio" name="q55" value="Regras de ciclo de vida do S3"> Regras de ciclo de vida do S3</li>
+                            <li><input type="radio" name="q55" value="Criptografia em trânsito e em repouso"> Criptografia em trânsito e em repouso</li>
+                            <li><input type="radio" name="q55" value="Controle de versão do S3"> Controle de versão do S3 </li>
+                            <li><input type="radio" name="q55" value="Log de acesso ao servidor"> Log de acesso ao servidor</li>
+                        </ul>
+                        <div class="answer" id="answer55"></div>
+                    </li>
+                    <li>
+                        <h2>Pergunta 56</h2>
+                        <h2>Qual dos itens a seguir é um princípio de design recomendado para a arquitetura da Nuvem AWS?</h2>
+                        <ul>
+                            <li><input type="radio" name="q56" value="Evite a arquitetura monolítica segmentando cargas de trabalho."> Evite a arquitetura monolítica segmentando cargas de trabalho.</li>
+                            <li><input type="radio" name="q56" value="Projete componentes fortemente acoplados"> Projete componentes fortemente acoplados.</li>
+                            <li><input type="radio" name="q56" value="Faça grandes alterações em menos iterações para reduzir as chances de falha."> Faça grandes alterações em menos iterações para reduzir as chances de falha.</li>
+                            <li><input type="radio" name="q56" value="Crie um único componente de aplicativo que possa lidar com toda a funcionalidade do aplicativo."> Crie um único componente de aplicativo que possa lidar com toda a funcionalidade do aplicativo.</li>
+                        </ul>
+                        <div class="answer" id="answer56"></div>
+                    </li>
+                    <li>
+                        <h2>Pergunta 57</h2>
+                        <h2>Uma empresa precisa instalar um aplicativo em um contêiner do Docker.
+                            Qual serviço da AWS elimina a necessidade de provisionar e gerenciar os hosts de contêiner?</h2>
+                        <ul>
+                            <li><input type="radio" name="q57" value="AWS Fargate"> AWS Fargate</li>
+                            <li><input type="radio" name="q57" value="Amazon FSx para servidor de arquivos do Windows"> Amazon FSx para servidor de arquivos do Windows</li>
+                            <li><input type="radio" name="q57" value="Amazon Elastic Container Service (Amazon ECS)"> Amazon Elastic Container Service (Amazon ECS)</li>
+                            <li><input type="radio" name="q57" value="Amazon EC2"> Amazon EC2</li>
+                        </ul>
+                        <div class="answer" id="answer57"></div>
+                    </li>
+                    <li>
+                        <h2>Pergunta 58</h2>
+                       <h2> Qual é a quantidade total de armazenamento oferecida pelo Amazon S3?</h2>
+                        <ul>
+                            <li><input type="radio" name="q58" value="100MB"> 100MB</li>
+                            <li><input type="radio" name="q58" value="5 TB"> 5 TB</li>
+                            <li><input type="radio" name="q58" value="Ilimitado"> Ilimitado</li>
+                            <li><input type="radio" name="q58" value="5 GB"> 5 GB</li>
+                        </ul>
+                        <div class="answer" id="answer58"></div>
+                    </li>
+                    <li>
+                        <h2>Pergunta 59</h2>
+                        <h2>Uma empresa tem uma carga de trabalho que será executada continuamente por 1 ano. A carga de trabalho não pode tolerar interrupções de serviço.
+                            Qual opção de compra do Amazon EC2 será MAIS econômica?</h2>
+                        <ul>
+                            <li><input type="radio" name="q59" value="Todas as instâncias reservadas iniciais"> Todas as instâncias reservadas iniciais</li>
+                            <li><input type="radio" name="q59" value="AWS Elastic Beanstalk"> AWS Elastic Beanstalk</li>
+                            <li><input type="radio" name="q59" value="Amazon S3"> Amazon S3</li>
+                            <li><input type="radio" name="q59" value="AWS Direct Connect"> AWS Direct Connect</li>
+                        </ul>
+                        <div class="answer" id="answer59"></div>
+                    </li>
+                    <li>
+                        <h2>Pergunta 60</h2>
+                        <p>Qual dos itens a seguir é um componente da infraestrutura global da AWS?</p>
+                        <ul>
+                            <li><input type="radio" name="q60" value="AWS Amazon Lightsail"> Amazon Lightsail</li>
+                            <li><input type="radio" name="q60" value="Amazon Alexa"> Amazon Alexa</li>
+                            <li><input type="radio" name="q60" value="Organizações da AWS"> Organizações da AWS</li>
+                            <li><input type="radio" name="q60" value="Regiões da AWS"> Regiões da AWS</li>
+                        </ul>
+                        <div class="answer" id="answer60"></div>
+                    </li>
+                    <li>
+                        <h2>Pergunta 61</h2>
+                        <h2>Quais serviços ou recursos da AWS fornecem soluções de recuperação de desastres para instâncias do Amazon EC2? (Escolha dois.)</h2>
+                        <ul>
+                            <li><input type="checkbox" name="q61a" value="a"AWS Shield> AWS Shield</li>
+                            <li><input type="checkbox" name="q61b" value="b"EC2 Amazon Machine Images (AMIs)> EC2 Amazon Machine Images (AMIs)</li>
+                            <li><input type="checkbox" name="q61c" value="c"Amazon Elastic Block Store (Amazon EBS) snapshots> Amazon Elastic Block Store (Amazon EBS) snapshots</li>
+                            <li><input type="checkbox" name="q61c" value="d"Amazon GuardDuty> Amazon GuardDuty </li>
+                            <li><input type="checkbox" name="q61d" value="e"Reserved Instances > Reserved Instances</li>
+                        </ul>
+                        <div class="answer" id="answer61"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 62</h2>
+                        <h2>Uma grande organização tem uma única conta da AWS.
+                            Quais são as vantagens de reconfigurar a conta única em várias contas da AWS? (Escolha dois.)</h2>
+                        <ul>
+                            <li><input type="checkbox" name="q62a" value="a"Ter várias contas reduz os riscos associados a atividades maliciosas
+                                direcionadas a uma única conta.> Ter várias contas reduz os riscos associados a atividades maliciosas
+                                direcionadas a uma única conta.</li>
+                            <li><input type="checkbox" name="q62b" value="b"O Amazon QuickSight oferece acesso a uma ferramenta de custo que fornece
+                                recomendações específicas do aplicativo para ambientes executados em várias
+                                contas.> O Amazon QuickSight oferece acesso a uma ferramenta de custo que fornece
+                                recomendações específicas do aplicativo para ambientes executados em várias
+                                contas.</li>
+                            <li><input type="checkbox" name="q62c" value="c"A transição de objetos do Amazon S3 para o Amazon S3 Glacier em contas
+                                separadas da AWS será mais barata.> A transição de objetos do Amazon S3 para o Amazon S3 Glacier em contas
+                                separadas da AWS será mais barata.</li>
+                            <li><input type="checkbox" name="q62d" value="d"Os descontos podem ser aplicados trimestralmente enviando casos no Console de
+                                Gerenciamento da AWS.> Os descontos podem ser aplicados trimestralmente enviando casos no Console de
+                                Gerenciamento da AWS.</li>
+                            <li><input type="checkbox" name="q62e" value="e"Permite o isolamento administrativo entre diferentes cargas de trabalho.> Permite o isolamento administrativo entre diferentes cargas de trabalho.</li>
+                        </ul>
+                        <div class="answer" id="answer62"></div>
+                    </li>
+                    <li>
+                        <h2>Pergunta 63</h2>
+                        <h2>Uma empresa hospeda um aplicativo em uma instância do Amazon EC2. A instância do
+                            EC2 precisa acessar vários recursos da AWS, incluindo o Amazon S3 e o Amazon
+                            DynamoDB.
+                            Qual é a solução operacionalmente mais eficiente para delegar permissões?</h2>
+                        <ul>
+                            <li><input type="radio" name="q63" value="Crie um usuário do IAM e use sua chave de acesso e chave de acesso secreta no aplicativo."> Crie um usuário do IAM e use sua chave de acesso e chave de acesso secreta no aplicativo.</li>
+                            <li><input type="radio" name="q63" value="Crie um usuário do IAM e use sua chave de acesso e chave de acesso secreta para criar um perfil da CLI na instância do EC2"> Crie um usuário do IAM e use sua chave de acesso e chave de acesso secreta para criar um perfil da CLI na instância do EC2</li>
+                            <li><input type="radio" name="q63" value="Crie uma função do IAM com as permissões necessárias. Anexe a função ao usuário administrativo do IAM."> Crie uma função do IAM com as permissões necessárias. Anexe a função ao usuário administrativo do IAM.</li>
+                            <li><input type="radio" name="q63" value="Crie uma função do IAM com as permissões necessárias. Anexe a função à instância do EC2."> Crie uma função do IAM com as permissões necessárias. Anexe a função à instância do EC2.</li>
+                        </ul>
+                        <div class="answer" id="answer63"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 64</h2>
+                        <h2>Uma empresa de varejo migrou recentemente seu site para a AWS. A empresa quer garantir que está protegida contra ataques de injeção de SQL. O site usa um Application Load Balancer para distribuir o tráfego para várias instâncias do Amazon EC2.
+                            Qual serviço ou recurso da AWS pode ser usado para criar uma regra personalizada que bloqueia ataques de injeção de SQL?</h2>
+                        <ul>
+                            <li><input type="radio" name="q64" value="Grupos de segurança"> Grupos de segurança</li>
+                            <li><input type="radio" name="q64" value="ACLs de rede"> ACLs de rede</li>
+                            <li><input type="radio" name="q64" value="AWS Shield"> AWS Shield</li>
+                            <li><input type="radio" name="q64" value="AWS WAF"> AWS WAF</li>
+                        </ul>
+                        <div class="answer" id="answer64"></div>
+                    </li>
+
+                    <li>
+                        <h2>Pergunta 65</h2>
+                        <h2>Quais deveres são de responsabilidade de uma empresa que está usando o AWS Lambda? (Escolha dois.)</h2>
+                        <ul>
+                            <li><input type="checkbox" name="q65a" value="a"Correção do sistema operacional> Correção do sistema operacional</li>
+                            <li><input type="checkbox" name="q65b" value="b"Seleção de recursos da CPU> Seleção de recursos da CPU</li>
+                            <li><input type="checkbox" name="q65c" value="c"Escrita e atualização de código> Escrita e atualização de código</li>
+                            <li><input type="checkbox" name="q65d" value="d"Atualização de Fimeware do equipamentos> Atualização de Fimeware do equipamentos</li>
+                            <li><input type="checkbox" name="q65e" value="e"Segurança dentro do código> Segurança dentro do código</li>
+                        </ul>
+                        <div class="answer" id="answer65"></div>
+                    </li>
+                </ol>
+
+                <!-- Modal -->
+<div id="resultadoModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Resultado</h2>
+        <p id="resultadoMensagem">Você acertou X de Y perguntas.</p>
+        <button id="btnFecharModal">Fechar</button>
+    </div>
+</div>
+
+
+                <button id="btnAnterior">Anterior</button>
+                <button id="btnProxima">Próxima</button>
+                <button id="btnFinalizar">Finalizar</button>
+            
+                <div id="resultadoFinal" style="display: none;">
+                    <p id="percentualAcerto"></p>
+                    <p id="mensagemFinal"></p>
+                </div>
+                <div id="timer">Tempo restante: 01:30:00</div>
+                <script src="script.js"></script>
+            </body>
+            </html>

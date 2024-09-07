@@ -1,119 +1,209 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia de Cloud - AWS</title>
-    <link rel="icon" href="/img/imagens/LOGO-ICON.png" type="image/png">
-    <link rel="stylesheet" href="/Estilos/style_guia_cloud.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="/main/index.html"><img src="/img/imagens/logo guru.png" alt="Logo" class="logo"></a>
-            <ul>
-                <li><a href="/main/quemSomos.html">QUEM SOMOS</a></li>
-                <li><a href="/main/simulados.html">SIMULADOS</a></li>
-                <li><a href="/main/guia_cloud.html"> GUIA DE CLOUD</a></li>
-                <li><a href="/main/materiais.html">MATERIAIS</a></li>
-            </ul>
-            <button class="login-btn">ENTRAR/CADASTRO</button>
-        </nav>
-    </header>
-    
-    <h1><strong>Guia de Cloud - AWS</strong></h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Guia de Cloud - AWS</title>
+        <link rel="icon" href="/img/imagens/LOGO-ICON.png" type="image/png">
+        <link rel="stylesheet" href="/Estilos/header.css">
+        <link rel="stylesheet" href="/Estilos/style_guia_cloud.css">
+        <link rel="stylesheet" href="/Estilos/footer.css">
+    </head>
+    <body>
+        <header>
+                <div class="menu-button">
+                    <img id="menu-button" src="https://www.clipartmax.com/png/full/77-773806_call-610-465-white-hamburger-menu-icon-png.png">
+                </div>
+                <nav class="menu">
+                    <a href="/main/index.html"><img src="/img/imagens/logo guru.png" alt="Logo" class="logo"></a>
+                    <ul class="nav-menu">
+                        <li><a href="/main/quemSomos.html">QUEM SOMOS</a></li>
+                        <li><a href="/main/simulados.html">SIMULADOS</a></li>
+                        <li><a href="/main/guia_cloud.html">GUIA DE CLOUD</a></li>
+                        <li><a href="/main/materiais.html">MATERIAIS</a></li>
+                    </ul>
+                    <a href="/main/acesso.html">
+                        <button class="login-btn">ENTRAR/CADASTRO</button>
+                    </a>
+                </nav>
+                <div class="mobile-menu" id="mobile-menu">
+                    <ul>
+                        <li><a href="/main/quemSomos.html">QUEM SOMOS</a></li>
+                        <li><a href="/main/simulados.html">SIMULADOS</a></li>
+                        <li><a href="/main/guia_cloud.html">GUIA DE CLOUD</a></li>
+                        <li><a href="/main/materiais.html">MATERIAIS</a></li>
+                        <li><a href="/main/acesso.html">ENTRAR/CADASTRO</a></li>
+                    </ul>
+                </div>
+            </header>
 
-    <details>
-        <summary><strong>O que é Tecnologia em Cloud? e Quais os Tipos?</strong></summary>
-        <ul>
-            <li><a href="https://aws.amazon.com/pt/what-is-cloud-computing/" target="_blank">Definição de Cloud Computing</a></li>
-            <ul>
-                <li><a href="https://aws.amazon.com/pt/what-is/iaas/" target="_blank">IaaS (Infrastructure as a Service)</a></li>
-                <li><a href="https://aws.amazon.com/pt/what-is/ipaas/" target="_blank">PaaS (Platform as a Service)</a></li>
-                <li><a href="https://aws.amazon.com/pt/what-is/saas/" target="_blank">SaaS (Software as a Service)</a></li>
-            </ul>
-            <li><a href="https://aws.amazon.com/pt/benefits/" target="_blank">Benefícios da Cloud AWS</a></li>
-        </ul>
-    </details>
+        <div class="cascatas">
+            <h1><strong>Guia de Cloud - AWS</strong></h1>
 
-    <details>
-        <summary><strong>Primeiros passos com AWS</strong></summary>
-        <ul>
-            <li><a href="https://aws.amazon.com/pt/free/" target="_blank">Criando uma Conta AWS</a></li>
-            <li><a href="https://aws.amazon.com/pt/security/" target="_blank">Configurações de Segurança</a></li>
-            <li><a href="https://aws.amazon.com/pt/console/" target="_blank">Introdução ao Console AWS</a></li>
-            <li><a href="https://aws.amazon.com/pt/iam/" target="_blank">Conceitos de IAM (Identidade e Acesso)</a></li>
-        </ul>
-    </details>
+            <details>
+                <summary><strong>O que é Tecnologia em Cloud? e Quais os
+                        Tipos?</strong></summary>
+                <ul>
+                    <li><a
+                            href="https://aws.amazon.com/pt/what-is-cloud-computing/"
+                            target="_blank">Definição de Cloud
+                            Computing</a></li>
+                    <ul>
+                        <li><a
+                                href="https://aws.amazon.com/pt/what-is/iaas/"
+                                target="_blank">IaaS (Infrastructure as a
+                                Service)</a></li>
+                        <li><a
+                                href="https://aws.amazon.com/pt/what-is/ipaas/"
+                                target="_blank">PaaS (Platform as a
+                                Service)</a></li>
+                        <li><a
+                                href="https://aws.amazon.com/pt/what-is/saas/"
+                                target="_blank">SaaS (Software as a
+                                Service)</a></li>
+                    </ul>
+                    <li><a href="https://aws.amazon.com/pt/benefits/"
+                            target="_blank">Benefícios da Cloud AWS</a></li>
+                </ul>
+            </details>
 
-    <details>
-        <summary><strong>Serviços/Recursos em Cloud Computing</strong></summary>
-        <ul>
-            <li><a href="https://aws.amazon.com/pt/ec2/" target="_blank">Amazon EC2</a></li>
-            <li><a href="https://aws.amazon.com/pt/ec2/instance-types/" target="_blank">Tipos de Instâncias</a></li>
-            <li><a href="https://docs.aws.amazon.com/pt_br/AWSEC2/latest/UserGuide/launching-instance.html" target="_blank">Lançando e Conectando Instâncias</a></li>
-            <li><a href="https://aws.amazon.com/pt/elasticloadbalancing/" target="_blank">Elastic Load Balancing</a></li>
-            <li><a href="https://aws.amazon.com/pt/autoscaling/" target="_blank">Auto Scaling</a></li>
-        </ul>
-    </details>
+            <details>
+                <summary><strong>Primeiros passos com AWS</strong></summary>
+                <ul>
+                    <li><a href="https://aws.amazon.com/pt/free/"
+                            target="_blank">Criando uma Conta AWS</a></li>
+                    <li><a href="https://aws.amazon.com/pt/security/"
+                            target="_blank">Configurações de
+                            Segurança</a></li>
+                    <li><a href="https://aws.amazon.com/pt/console/"
+                            target="_blank">Introdução ao Console
+                            AWS</a></li>
+                    <li><a href="https://aws.amazon.com/pt/iam/"
+                            target="_blank">Conceitos de IAM (Identidade e
+                            Acesso)</a></li>
+                </ul>
+            </details>
 
-    <details>
-        <summary><strong>Armazenamento e Banco de Dados</strong></summary>
-        <ul>
-            <li><a href="https://aws.amazon.com/pt/s3/" target="_blank">Amazon S3</a></li>
-            <li><a href="https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/creating-buckets-s3.html" target="_blank">Criando e Gerenciando Buckets</a></li>
-            <li><a href="https://aws.amazon.com/pt/rds/" target="_blank">Amazon RDS</a></li>
-            <li><a href="https://docs.aws.amazon.com/pt_br/AmazonRDS/latest/UserGuide/USER_CreateDBInstance.html" target="_blank">Criando Instâncias RDS</a></li>
-            <li><a href="https://aws.amazon.com/pt/dynamodb/" target="_blank">Amazon DynamoDB</a></li>
-            <li><a href="https://docs.aws.amazon.com/pt_br/amazondynamodb/latest/developerguide/Introduction.html" target="_blank">Criação de Tabelas e Gerenciamento de Dados</a></li>
-        </ul>
-    </details>
+            <details>
+                <summary><strong>Serviços/Recursos em Cloud
+                        Computing</strong></summary>
+                <ul>
+                    <li><a href="https://aws.amazon.com/pt/ec2/"
+                            target="_blank">Amazon EC2</a></li>
+                    <li><a
+                            href="https://aws.amazon.com/pt/ec2/instance-types/"
+                            target="_blank">Tipos de Instâncias</a></li>
+                    <li><a
+                            href="https://docs.aws.amazon.com/pt_br/AWSEC2/latest/UserGuide/launching-instance.html"
+                            target="_blank">Lançando e Conectando
+                            Instâncias</a></li>
+                    <li><a
+                            href="https://aws.amazon.com/pt/elasticloadbalancing/"
+                            target="_blank">Elastic Load Balancing</a></li>
+                    <li><a href="https://aws.amazon.com/pt/autoscaling/"
+                            target="_blank">Auto Scaling</a></li>
+                </ul>
+            </details>
 
-    <details>
-        <summary><strong>Redes</strong></summary>
-        <ul>
-            <li><a href="https://aws.amazon.com/pt/vpc/" target="_blank">Amazon VPC</a></li>
-            <li><a href="https://docs.aws.amazon.com/pt_br/vpc/latest/userguide/VPC_Subnets.html" target="_blank">Configuração de Sub-redes e Segurança de Rede</a></li>
-            <li><a href="https://aws.amazon.com/pt/cloudfront/" target="_blank">Amazon CloudFront</a></li>
-            <li><a href="https://docs.aws.amazon.com/pt_br/AmazonCloudFront/latest/DeveloperGuide/distribution-working-with.html" target="_blank">Configurando Distribuições</a></li>
-        </ul>
-    </details>
+            <details>
+                <summary><strong>Armazenamento e Banco de
+                        Dados</strong></summary>
+                <ul>
+                    <li><a href="https://aws.amazon.com/pt/s3/"
+                            target="_blank">Amazon S3</a></li>
+                    <li><a
+                            href="https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/creating-buckets-s3.html"
+                            target="_blank">Criando e Gerenciando
+                            Buckets</a></li>
+                    <li><a href="https://aws.amazon.com/pt/rds/"
+                            target="_blank">Amazon RDS</a></li>
+                    <li><a
+                            href="https://docs.aws.amazon.com/pt_br/AmazonRDS/latest/UserGuide/USER_CreateDBInstance.html"
+                            target="_blank">Criando Instâncias RDS</a></li>
+                    <li><a href="https://aws.amazon.com/pt/dynamodb/"
+                            target="_blank">Amazon DynamoDB</a></li>
+                    <li><a
+                            href="https://docs.aws.amazon.com/pt_br/amazondynamodb/latest/developerguide/Introduction.html"
+                            target="_blank">Criação de Tabelas e
+                            Gerenciamento
+                            de Dados</a></li>
+                </ul>
+            </details>
 
-    <details>
-        <summary><strong>Monitoramento e Segurança</strong></summary>
-        <ul>
-            <li><a href="https://aws.amazon.com/pt/cloudwatch/" target="_blank">AWS CloudWatch</a></li>
-            <li><a href="https://docs.aws.amazon.com/pt_br/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" target="_blank">Configurando Métricas e Alarmes</a></li>
-            <li><a href="https://aws.amazon.com/pt/cloudtrail/" target="_blank">AWS CloudTrail</a></li>
-            <li><a href="https://docs.aws.amazon.com/pt_br/awscloudtrail/latest/userguide/cloudtrail-user-guide.html" target="_blank">Monitoramento de Atividades</a></li>
-        </ul>
-    </details>
+            <details>
+                <summary><strong>Redes</strong></summary>
+                <ul>
+                    <li><a href="https://aws.amazon.com/pt/vpc/"
+                            target="_blank">Amazon VPC</a></li>
+                    <li><a
+                            href="https://docs.aws.amazon.com/pt_br/vpc/latest/userguide/VPC_Subnets.html"
+                            target="_blank">Configuração de Sub-redes e
+                            Segurança de Rede</a></li>
+                    <li><a href="https://aws.amazon.com/pt/cloudfront/"
+                            target="_blank">Amazon CloudFront</a></li>
+                    <li><a
+                            href="https://docs.aws.amazon.com/pt_br/AmazonCloudFront/latest/DeveloperGuide/distribution-working-with.html"
+                            target="_blank">Configurando
+                            Distribuições</a></li>
+                </ul>
+            </details>
 
-    <details>
-        <summary><strong>Mapa Mental AWS Cloud</strong></summary>
-        <button class="mapa_mental">
-            <a href="https://whimsical.com/aprendaaws-fundamentos-XbbmQW5otoBpfckAaTrMb" target="_blank">Acessar</a>
-        </button>
-    </details>
+            <details>
+                <summary><strong>Monitoramento e
+                        Segurança</strong></summary>
+                <ul>
+                    <li><a href="https://aws.amazon.com/pt/cloudwatch/"
+                            target="_blank">AWS CloudWatch</a></li>
+                    <li><a
+                            href="https://docs.aws.amazon.com/pt_br/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html"
+                            target="_blank">Configurando Métricas e
+                            Alarmes</a></li>
+                    <li><a href="https://aws.amazon.com/pt/cloudtrail/"
+                            target="_blank">AWS CloudTrail</a></li>
+                    <li><a
+                            href="https://docs.aws.amazon.com/pt_br/awscloudtrail/latest/userguide/cloudtrail-user-guide.html"
+                            target="_blank">Monitoramento de
+                            Atividades</a></li>
+                </ul>
+            </details>
 
-    <footer>
-        <img src="/img/imagens/logo guru.png" alt="Logo" class="logo">
-        <div class="footer-text">
-            <p>Desbrave o conhecimento. Transforme o futuro</p>
-            <p>"Continue estudando e alcance sua certificação AWS! Sucesso nos estudos!"</p><br><br><br>
-            <p>&copy; 2024 Guru Certificate. Todos os direitos reservados.</p>
+            <details>
+                <summary><strong>Mapa Mental AWS Cloud</strong></summary>
+                <button class="mapa_mental">
+                    <a
+                        href="https://whimsical.com/aprendaaws-fundamentos-XbbmQW5otoBpfckAaTrMb"
+                        target="_blank">Acessar</a>
+                </button>
+            </details>
         </div>
-        <div class="canto-inferior-direito">
-            <div class="social-media">
-                <a href="#"><img src="/img/imagens/facebook (2).png" alt="Facebook"></a>
-                <a href="#"><img src="/img/imagens/instagram.png" alt="instagram"></a>
-                <a href="#"><img src="/img/imagens/telegrama.png" alt="telegram"></a>
-                <a href="#"><img src="/img/imagens/youtube.png" alt="youtube"></a>
+
+        <footer>
+            <div class="footer-logo">
+                <img src="/img/imagens/logo guru.png" alt="Logo" class="logo">
             </div>
-            <div class="certificacoes">
-                <img src="/img/imagens/Group 1.png" alt="certificações">
+            <div class="footer-text">
+                <p>Desbrave o conhecimento. Transforme o futuro</p>
+                <p>"Continue estudando e alcance sua certificação AWS! Sucesso nos estudos!"</p><br><br><br>
+                <p>&copy; 2024 Guru Certificate. Todos os direitos
+                    reservados.</p>
             </div>
-        </div>
-    </footer>
-</body>
+            <div class="footer-social-media">
+                <div class="social-media">
+                    <a href="#"><img src="/img/imagens/facebook (2).png"
+                            alt="Facebook"></a>
+                    <a href="#"><img src="/img/imagens/instagram.png"
+                            alt="instagram"></a>
+                    <a href="#"><img src="/img/imagens/telegrama.png"
+                            alt="telegram"></a>
+                    <a href="#"><img src="/img/imagens/youtube.png"
+                            alt="youtube"></a>
+                </div>
+                <div class="certificacoes">
+                    <img src="/img/imagens/Group 1.png" alt="certificações">
+                </div>
+            </div> 
+        </footer>
+
+        <script src="/main/script.js"></script>
+    </body>
 </html>

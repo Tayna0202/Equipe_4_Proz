@@ -1,0 +1,46 @@
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100vw;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.footer-logo img{
+  max-width: 12vw;
+}
+
+.social-media img {
+  max-width: 4vw;
+}
+
+.certificacoes img {
+  max-width: 20vw;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+
+  .footer-logo img{
+    max-width: 30vw;
+  }
+
+  .social-media img {
+    max-width: 9vw;
+  }
+
+  .certificacoes img {
+    max-width: 50vw;
+  }
+
+  .footer-text {
+    font-size: 15px;
+    text-align: center;
+  }
+}
